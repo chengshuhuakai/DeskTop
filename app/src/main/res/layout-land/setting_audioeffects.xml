@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+    <ImageView
+    android:id="@+id/ae_tiao_1"
+    android:layout_marginLeft="277px"
+    android:layout_marginTop="477px"
+    android:layout_width="48px"
+    android:layout_height="374px"
+    android:background="@mipmap/tiao_d_ae"
+    />
+
+    <ImageView
+        android:id="@+id/ae_tiao_2"
+        android:layout_marginLeft="425px"
+        android:layout_marginTop="477px"
+        android:layout_width="48px"
+        android:layout_height="374px"
+        android:background="@mipmap/tiao_d_ae"
+        />
+
+
+    <ImageView
+        android:id="@+id/ae_tiao_3"
+        android:layout_marginLeft="569px"
+        android:layout_marginTop="477px"
+        android:layout_width="48px"
+        android:layout_height="374px"
+        android:background="@mipmap/tiao_d_ae"
+        />
+
+    <ImageView
+        android:id="@+id/ae_tiao_4"
+        android:layout_marginLeft="714px"
+        android:layout_marginTop="477px"
+        android:layout_width="48px"
+        android:layout_height="374px"
+        android:background="@mipmap/tiao_d_ae"
+        />
+
+
+    <ImageView
+        android:id="@+id/ae_tiao_5"
+        android:layout_marginLeft="857px"
+        android:layout_marginTop="477px"
+        android:layout_width="48px"
+        android:layout_height="374px"
+        android:background="@mipmap/tiao_d_ae"
+        />
+
+
+    <ImageView
+        android:id="@+id/ae_tiao_6"
+        android:layout_marginLeft="1002px"
+        android:layout_marginTop="477px"
+        android:layout_width="48px"
+        android:layout_height="374px"
+        android:background="@mipmap/tiao_d_ae"
+        />
+    <ImageView
+        android:id="@+id/ae_tiao_7"
+        android:layout_marginLeft="1146px"
+        android:layout_marginTop="477px"
+        android:layout_width="48px"
+        android:layout_height="374px"
+        android:background="@mipmap/tiao_d_ae"
+        />
+
+    <ImageView
+        android:id="@+id/ae_tiao_8"
+        android:layout_marginLeft="1289px"
+        android:layout_marginTop="477px"
+        android:layout_width="48px"
+        android:layout_height="374px"
+        android:background="@mipmap/tiao_d_ae"
+        />
+
+    <ImageView
+        android:id="@+id/ae_tiao_9"
+        android:layout_marginLeft="1434px"
+        android:layout_marginTop="477px"
+        android:layout_width="48px"
+        android:layout_height="374px"
+        android:background="@mipmap/tiao_d_ae"
+        />
+
+    <ImageView
+        android:id="@+id/ae_tiao_10"
+        android:layout_marginLeft="1578px"
+        android:layout_marginTop="477px"
+        android:layout_width="48px"
+        android:layout_height="374px"
+        android:background="@mipmap/tiao_d_ae"
+        />
+
+
+    <ImageView
+        android:id="@+id/ae_tiao_11"
+        android:layout_marginLeft="1728px"
+        android:layout_marginTop="477px"
+        android:layout_width="48px"
+        android:layout_height="374px"
+        android:background="@mipmap/tiao_d_ae"
+        />
+    <ImageView
+        android:id="@+id/ae_kuang_1"
+        android:layout_marginLeft="276px"
+        android:layout_marginTop="876px"
+        android:layout_width="180px"
+        android:layout_height="116px"
+        android:background="@mipmap/kuang_d_ae"
+        />
+
+    <ImageView
+        android:id="@+id/ae_kuang_2"
+        android:layout_marginLeft="465px"
+        android:layout_marginTop="876px"
+        android:layout_width="180px"
+        android:layout_height="116px"
+        android:background="@mipmap/kuang_d_ae"
+        />
+
+    <ImageView
+        android:id="@+id/ae_kuang_3"
+        android:layout_marginLeft="654px"
+        android:layout_marginTop="876px"
+        android:layout_width="180px"
+        android:layout_height="116px"
+        android:background="@mipmap/kuang_d_ae"
+        />
+
+    <ImageView
+        android:id="@+id/ae_kuang_4"
+        android:layout_marginLeft="842px"
+        android:layout_marginTop="876px"
+        android:layout_width="180px"
+        android:layout_height="116px"
+        android:background="@mipmap/kuang_d_ae"
+        />
+
+    <ImageView
+        android:id="@+id/ae_kuang_5"
+        android:layout_marginLeft="1029px"
+        android:layout_marginTop="876px"
+        android:layout_width="180px"
+        android:layout_height="116px"
+        android:background="@mipmap/kuang_d_ae"
+        />
+
+    <ImageView
+        android:id="@+id/ae_kuang_6"
+        android:layout_marginLeft="1218px"
+        android:layout_marginTop="876px"
+        android:layout_width="180px"
+        android:layout_height="116px"
+        android:background="@mipmap/kuang_d_ae"
+        />
+
+    <ImageView
+        android:id="@+id/ae_kuang_7"
+        android:layout_marginLeft="1407px"
+        android:layout_marginTop="876px"
+        android:layout_width="180px"
+        android:layout_height="116px"
+        android:background="@mipmap/kuang_d_ae"
+        />
+
+    <ImageView
+        android:id="@+id/ae_kuang_8"
+        android:layout_marginLeft="1596px"
+        android:layout_marginTop="876px"
+        android:layout_width="180px"
+        android:layout_height="116px"
+        android:background="@mipmap/kuang_d_ae"
+        />
+</FrameLayout>

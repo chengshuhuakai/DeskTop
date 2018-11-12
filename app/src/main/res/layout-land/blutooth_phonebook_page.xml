@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/di"
+        android:layout_width="1076px"
+        android:layout_height="129px"
+        android:layout_marginLeft="210px"
+        android:layout_marginTop="453px"
+        android:background="@mipmap/di"
+        />
+
+
+    <ImageView
+        android:id="@+id/line"
+        android:layout_width="1070px"
+        android:layout_height="2px"
+        android:layout_marginLeft="211px"
+        android:layout_marginTop="713px"
+        android:background="@mipmap/line_bt_book"
+        />
+
+
+    <ImageView
+        android:id="@+id/toutiao"
+        android:layout_width="582px"
+        android:layout_height="94px"
+        android:layout_marginLeft="1338px"
+        android:layout_marginTop="220px"
+        android:background="@mipmap/toutiao"
+        />
+
+    <ImageView
+        android:id="@+id/xianzai"
+        android:layout_width="124px"
+        android:layout_height="94px"
+        android:layout_marginLeft="1344px"
+        android:layout_marginTop="220px"
+        android:background="@mipmap/xiazai_n"
+        />
+
+    <ImageButton
+        android:id="@+id/BtnDelete"
+        android:layout_width="124px"
+        android:layout_height="96px"
+        android:layout_marginLeft="1796px"
+        android:layout_marginTop="315px"
+        android:background="@mipmap/shanchu_btbook_n"
+        />
+
+    <ImageView
+        android:id="@+id/hengxian"
+        android:layout_width="540px"
+        android:layout_height="2px"
+        android:layout_marginLeft="1359px"
+        android:layout_marginTop="411px"
+        android:background="@mipmap/shanchu_btbook_n"
+        />
+
+    <ImageButton
+        android:id="@+id/BtnSearchA"
+        android:layout_width="90px"
+        android:layout_height="120px"
+        android:layout_marginLeft="1354px"
+        android:layout_marginTop="434px"
+        android:background="@drawable/a_tb"
+        />
+
+    <ImageButton
+        android:id="@+id/BtnSearchB"
+        android:layout_width="90px"
+        android:layout_height="120px"
+        android:layout_marginLeft="1446px"
+        android:layout_marginTop="434px"
+        android:background="@drawable/b_tb"
+        />
+
+    <ImageButton
+        android:id="@+id/BtnSearchC"
+        android:layout_width="90px"
+        android:layout_height="120px"
+        android:layout_marginLeft="1538px"
+        android:layout_marginTop="434px"
+        android:background="@drawable/c_tb"
+        />
+
+    <ImageButton
+        android:id="@+id/BtnSearchD"
+        android:layout_width="90px"
+        android:layout_height="120px"
+        android:layout_marginLeft="1629px"
+        android:layout_marginTop="434px"
+        android:background="@drawable/d_tb"
+        />
+
+    <ImageButton
+        android:id="@+id/BtnSearchE"
+        android:layout_width="90px"
+        android:layout_height="120px"
+        android:layout_marginLeft="1721px"
+        android:layout_marginTop="434px"
+        android:background="@drawable/e_tb"
+        />
+
+    <ImageButton
+        android:id="@+id/BtnSearchF"
+        android:layout_width="90px"
+        android:layout_height="120px"
+        android:layout_marginLeft="1813px"
+        android:layout_marginTop="434px"
+        android:background="@drawable/f_tb"
+        />
+
+    <ImageButton
+        android:id="@+id/BtnSearchG"
+        android:layout_width="90px"
+        android:layout_height="120px"
+        android:layout_marginLeft="1354px"
+        android:layout_marginTop="560px"
+        android:background="@drawable/g_tb"
+        />
+
+    <ImageButton
+        android:id="@+id/BtnSearchH"
+        android:layout_width="90px"
+        android:layout_height="120px"
+        android:layout_marginLeft="1446px"
+        android:layout_marginTop="560px"
+        android:background="@drawable/h_tb"
+        />
+
+    <ImageButton
+        android:id="@+id/BtnSearchI"
+        android:layout_width="90px"
+        android:layout_height="120px"
+        android:layout_marginLeft="1538px"
+        android:layout_marginTop="560px"
+        android:background="@drawable/i_tb"
+        />
+
+    <ImageButton
+        android:id="@+id/BtnSearchJ"
+        android:layout_width="90px"
+        android:layout_height="120px"
+        android:layout_marginLeft="1629px"
+        android:layout_marginTop="560px"
+        android:background="@drawable/j_tb"
+        />
+
+    <ImageButton
+        android:id="@+id/BtnSearchK"
+        android:layout_width="90px"
+        android:layout_height="120px"
+        android:layout_marginLeft="1721px"
+        android:layout_marginTop="560px"
+        android:background="@drawable/k_tb"
+        />
+
+    <ImageButton
+        android:id="@+id/BtnSearchL"
+        android:layout_width="90px"
+        android:layout_height="120px"
+        android:layout_marginLeft="1813px"
+        android:layout_marginTop="560px"
+        android:background="@drawable/l_tb"
+        />
+
+    <ImageButton
+        android:id="@+id/BtnSearchM"
+        android:layout_width="90px"
+        android:layout_height="120px"
+        android:layout_marginLeft="1354px"
+        android:layout_marginTop="686px"
+        android:background="@drawable/m_tb"
+        />
+
+
+    <ImageButton
+        android:id="@+id/BtnSearchN"
+        android:layout_width="90px"
+        android:layout_height="120px"
+        android:layout_marginLeft="1446px"
+        android:layout_marginTop="686px"
+        android:background="@drawable/n_tb"
+        />
+
+    <ImageButton
+        android:id="@+id/BtnSearchO"
+        android:layout_width="90px"
+        android:layout_height="120px"
+        android:layout_marginLeft="1538px"
+        android:layout_marginTop="686px"
+        android:background="@drawable/o_tb"
+        />
+
+    <ImageButton
+        android:id="@+id/BtnSearchP"
+        android:layout_width="90px"
+        android:layout_height="120px"
+        android:layout_marginLeft="1629px"
+        android:layout_marginTop="686px"
+        android:background="@drawable/p_tb"
+        />
+
+    <ImageButton
+        android:id="@+id/BtnSearchQ"
+        android:layout_width="90px"
+        android:layout_height="120px"
+        android:layout_marginLeft="1721px"
+        android:layout_marginTop="686px"
+        android:background="@drawable/q_tb"
+        />
+
+    <ImageButton
+        android:id="@+id/BtnSearchR"
+        android:layout_width="90px"
+        android:layout_height="120px"
+        android:layout_marginLeft="1813px"
+        android:layout_marginTop="686px"
+        android:background="@drawable/r_tb"
+        />
+
+    <ImageButton
+        android:id="@+id/BtnSearchS"
+        android:layout_width="90px"
+        android:layout_height="120px"
+        android:layout_marginLeft="1354px"
+        android:layout_marginTop="811px"
+        android:background="@drawable/s_tb"
+        />
+
+    <ImageButton
+        android:id="@+id/BtnSearchT"
+        android:layout_width="90px"
+        android:layout_height="120px"
+        android:layout_marginLeft="1446px"
+        android:layout_marginTop="811px"
+        android:background="@drawable/t_tb"
+        />
+
+    <ImageButton
+        android:id="@+id/BtnSearchU"
+        android:layout_width="90px"
+        android:layout_height="120px"
+        android:layout_marginLeft="1538px"
+        android:layout_marginTop="811px"
+        android:background="@drawable/u_tb"
+        />
+
+    <ImageButton
+        android:id="@+id/BtnSearchV"
+        android:layout_width="90px"
+        android:layout_height="120px"
+        android:layout_marginLeft="1629px"
+        android:layout_marginTop="811px"
+        android:background="@drawable/v_tb"
+        />
+
+    <ImageButton
+        android:id="@+id/BtnSearchW"
+        android:layout_width="90px"
+        android:layout_height="120px"
+        android:layout_marginLeft="1721px"
+        android:layout_marginTop="811px"
+        android:background="@drawable/w_tb"
+        />
+    <ImageButton
+        android:id="@+id/BtnSearchX"
+        android:layout_width="90px"
+        android:layout_height="120px"
+        android:layout_marginLeft="1813px"
+        android:layout_marginTop="811px"
+        android:background="@drawable/x_tb"
+        />
+
+    <ImageButton
+        android:id="@+id/BtnSearchY"
+        android:layout_width="90px"
+        android:layout_height="120px"
+        android:layout_marginLeft="1354px"
+        android:layout_marginTop="937px"
+        android:background="@drawable/y_tb"
+        />
+
+    <ImageButton
+        android:id="@+id/BtnSearchZ"
+        android:layout_width="90px"
+        android:layout_height="120px"
+        android:layout_marginLeft="1446px"
+        android:layout_marginTop="937px"
+        android:background="@drawable/z_tb"
+        />
+
+
+    <ImageButton
+        android:id="@+id/BtnXing"
+        android:layout_width="90px"
+        android:layout_height="120px"
+        android:layout_marginLeft="1538px"
+        android:layout_marginTop="937px"
+        android:background="@mipmap/xing_btbook_n"
+        />
+    <ImageButton
+        android:id="@+id/BtnJing"
+        android:layout_width="90px"
+        android:layout_height="120px"
+        android:layout_marginLeft="1629px"
+        android:layout_marginTop="937px"
+        android:background="@mipmap/jing_btbook_n"
+        />
+
+    <ImageButton
+        android:id="@+id/BtnDian"
+        android:layout_width="90px"
+        android:layout_height="120px"
+        android:layout_marginLeft="1721px"
+        android:layout_marginTop="937px"
+        android:background="@mipmap/dian_btbook_n"
+        />
+    <ImageButton
+        android:id="@+id/BtnSearchNum123"
+        android:layout_width="90px"
+        android:layout_height="120px"
+        android:layout_marginLeft="1813px"
+        android:layout_marginTop="937px"
+        android:background="@mipmap/num_123_n"
+        />
+
+
+
+
+</FrameLayout>

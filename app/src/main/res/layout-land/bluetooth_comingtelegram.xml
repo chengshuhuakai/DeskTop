@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+    <ImageButton
+        android:id="@+id/BtnBtConnected"
+        android:background="@drawable/guaduan_lanyalaidian"
+        android:layout_marginLeft="1433px"
+        android:layout_marginTop="817px"
+        android:layout_width="130px"
+        android:layout_height="130px"/>
+
+    <ImageButtton
+        android:id="@+id/BtnBtDisConnected"
+        android:background="@drawable/jieting_lanyalaidian"
+        android:layout_marginLeft="1702px"
+        android:layout_marginTop="817px"
+        android:layout_width="130px"
+        android:layout_height="130px"/>
+
+
+</RelativeLayout>

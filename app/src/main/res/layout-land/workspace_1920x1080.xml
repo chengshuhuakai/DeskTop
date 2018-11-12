@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/ShowScreen2"
+              android:layout_width="1013px"
+              android:layout_height="176px"
+              android:orientation="vertical">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/kaidilake_viewpaper"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+                <RadioGroup
+                    android:id="@+id/rg_compare_intent1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+                    <RadioButton
+                        android:id="@+id/bg_daohang"
+                        android:layout_width="158px"
+                        android:layout_height="158px"
+                        android:layout_marginLeft="380px"
+                        android:layout_marginTop="28px"
+                        android:button="@null"
+                        android:clickable="true"
+                        android:background="@drawable/daohang_1920x1080"
+                        />
+                    <RadioButton
+                        android:id="@+id/bg_shouyin"
+                        android:layout_width="158px"
+                        android:layout_height="158px"
+                        android:layout_marginLeft="59px"
+                        android:layout_marginTop="28px"
+                        android:button="@null"
+                        android:clickable="true"
+                        android:background="@drawable/shouyin_1920x1080"
+                        />
+
+                    <RadioButton
+                        android:id="@+id/bg_yinyue"
+                        android:layout_width="158px"
+                        android:layout_height="158px"
+                        android:layout_marginLeft="47px"
+                        android:layout_marginTop="28px"
+                        android:button="@null"
+                        android:clickable="true"
+                        android:background="@drawable/yinyue_1920x1080"
+                        />
+                    <RadioButton
+                        android:id="@+id/bg_dsp"
+                        android:layout_width="158px"
+                        android:layout_height="158px"
+                        android:layout_marginLeft="40px"
+                        android:layout_marginTop="28px"
+                        android:button="@null"
+                        android:clickable="true"
+                        android:background="@drawable/dsp_1920x1080"
+                        />
+
+                    <RadioButton
+                        android:id="@+id/bg_shipin"
+                        android:layout_width="158px"
+                        android:layout_height="158px"
+                        android:layout_marginLeft="46px"
+                        android:layout_marginTop="28px"
+                        android:button="@null"
+                        android:clickable="true"
+                        android:background="@drawable/shipin_1920x1080"
+                        />
+
+                    <RadioButton
+                        android:id="@+id/bg_lanya"
+                        android:layout_width="158px"
+                        android:layout_height="158px"
+                        android:layout_marginLeft="39px"
+                        android:layout_marginTop="28px"
+                        android:button="@null"
+                        android:clickable="true"
+                        android:background="@drawable/lanya_1920x1080"
+                        />
+                </RadioGroup>
+
+
+            </android.support.v4.view.ViewPager>
+
+</LinearLayout>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/sw_kuangdi"
+        android:layout_width="1550px"
+        android:layout_height="340px"
+        android:layout_marginLeft="285px"
+        android:layout_marginTop="493px"
+        android:background="@mipmap/kuangdi_sw"
+        />
+
+    <ImageButton
+        android:id="@+id/BtnLoopMode"
+        android:layout_width="190px"
+        android:layout_height="144px"
+        android:layout_marginLeft="365px"
+        android:layout_marginTop="511px"
+        android:background="@drawable/mode_sw"
+        />
+
+    <ImageButton
+        android:id="@+id/BtnNext"
+        android:layout_width="190px"
+        android:layout_height="144px"
+        android:layout_marginLeft="628px"
+        android:layout_marginTop="511px"
+        android:background="@drawable/xiayiqu_sw"
+        />
+
+    <ImageButton
+        android:id="@+id/BtnPrev"
+        android:layout_width="190px"
+        android:layout_height="144px"
+        android:layout_marginLeft="849px"
+        android:layout_marginTop="511px"
+        android:background="@drawable/shangyiqu_sw"
+        />
+    <!--关机-->
+    <ImageButton
+        android:id="@+id/BtnShutDown"
+        android:layout_width="190px"
+        android:layout_height="144px"
+        android:layout_marginLeft="1076px"
+        android:layout_marginTop="511px"
+        android:background="@drawable/guanji_sw"
+        />
+
+    <ImageButton
+        android:id="@+id/BtnNav"
+        android:layout_width="190px"
+        android:layout_height="144px"
+        android:layout_marginLeft="1302px"
+        android:layout_marginTop="511px"
+        android:background="@drawable/daohang_sw"
+        />
+
+    <ImageButton
+        android:id="@+id/BtnMute"
+        android:layout_width="190px"
+        android:layout_height="144px"
+        android:layout_marginLeft="365px"
+        android:layout_marginTop="656px"
+        android:background="@drawable/mute_sw"
+        />
+
+    <ImageButton
+        android:id="@+id/BtnConnected"
+        android:layout_width="190px"
+        android:layout_height="144px"
+        android:layout_marginLeft="628px"
+        android:layout_marginTop="656px"
+        android:background="@drawable/jieting_sw"
+        />
+
+    <ImageButton
+        android:id="@+id/BtnDisConnected"
+        android:layout_width="190px"
+        android:layout_height="144px"
+        android:layout_marginLeft="849px"
+        android:layout_marginTop="656px"
+        android:background="@mipmap/guadduan_n_sw"
+        />
+
+    <ImageButton
+        android:id="@+id/BtnSoundAdd"
+        android:layout_width="190px"
+        android:layout_height="144px"
+        android:layout_marginLeft="1076px"
+        android:layout_marginTop="656px"
+        android:background="@drawable/yinliangjia_sw"
+        />
+
+    <ImageButton
+        android:id="@+id/BtnSoundEffect"
+        android:layout_width="190px"
+        android:layout_height="144px"
+        android:layout_marginLeft="1302px"
+        android:layout_marginTop="656px"
+        android:background="@drawable/yinliangjian_sw"
+        />
+
+    <ImageButton
+        android:id="@+id/BtnCheck"
+        android:layout_width="144px"
+        android:layout_height="289px"
+        android:layout_marginLeft="1520px"
+        android:layout_marginTop="511px"
+        android:background="@drawable/duigou_sw"
+        />
+
+    <ImageButton
+        android:id="@+id/BtnDisChoose"
+        android:layout_width="144px"
+        android:layout_height="289px"
+        android:layout_marginLeft="1666px"
+        android:layout_marginTop="511px"
+        android:background="@drawable/cuo_sw"
+        />
+
+    <ImageView
+        android:id="@+id/BtnOn"
+        android:layout_width="270px"
+        android:layout_height="104px"
+        android:layout_marginLeft="302px"
+        android:layout_marginTop="871px"
+        android:background="@mipmap/on_sw"
+        />
+
+    <ImageView
+        android:id="@+id/BtnOff"
+        android:layout_width="270px"
+        android:layout_height="104px"
+        android:layout_marginLeft="1547px"
+        android:layout_marginTop="871px"
+        android:background="@mipmap/off_sw"
+        />
+
+</FrameLayout>

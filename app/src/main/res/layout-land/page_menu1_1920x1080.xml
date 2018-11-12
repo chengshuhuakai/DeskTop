@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+    <!--注意 使用RadioGroup以後 marginLeft屬性 取值相對 而不是絕對-->
+
+    <RadioButton
+        android:id="@+id/btnCarAir"
+        android:layout_width="158px"
+        android:layout_height="158px"
+        android:layout_marginLeft="380px"
+        android:layout_marginTop="28px"
+        android:button="@null"
+        android:clickable="true"
+        android:background="@drawable/kongtiao_1920x1080"
+        />
+    <RadioButton
+        android:id="@+id/btnAppList"
+        android:layout_width="158px"
+        android:layout_height="158px"
+        android:layout_marginLeft="59px"
+        android:layout_marginTop="28px"
+        android:button="@null"
+        android:clickable="true"
+        android:background="@drawable/yingyong_1920x1080"
+        />
+
+    <RadioButton
+        android:id="@+id/btnCarConsole"
+        android:layout_width="158px"
+        android:layout_height="158px"
+        android:layout_marginLeft="47px"
+        android:layout_marginTop="28px"
+        android:button="@null"
+        android:clickable="true"
+        android:background="@drawable/yuanche_1920x1080"
+        />
+    <RadioButton
+        android:id="@+id/btnExplorer"
+        android:layout_width="158px"
+        android:layout_height="158px"
+        android:layout_marginLeft="40px"
+        android:layout_marginTop="28px"
+        android:button="@null"
+        android:clickable="true"
+        android:background="@drawable/liulanqi_1920x1080"
+        />
+
+    <RadioButton
+        android:id="@+id/btnFileManager"
+        android:layout_width="158px"
+        android:layout_height="158px"
+        android:layout_marginLeft="46px"
+        android:layout_marginTop="28px"
+        android:button="@null"
+        android:clickable="true"
+        android:background="@drawable/ziyuanguanli_1920x1080"
+        />
+
+    <RadioButton
+        android:id="@+id/btnSetting"
+        android:layout_width="158px"
+        android:layout_height="158px"
+        android:layout_marginLeft="31px"
+        android:layout_marginTop="28px"
+        android:button="@null"
+        android:clickable="true"
+        android:background="@drawable/shezhi_1920x1080"
+        />
+
+</LinearLayout>

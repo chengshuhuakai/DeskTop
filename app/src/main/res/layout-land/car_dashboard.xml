@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/zuobiaopan"
+        android:layout_marginLeft="0px"
+        android:layout_marginTop="286px"
+        android:layout_width="728px"
+        android:layout_height="728px"
+        android:background="@mipmap/zuobiaopan_dashboard"
+    />
+
+    <ImageView
+        android:id="@+id/youbiaopan"
+        android:layout_marginLeft="1192px"
+        android:layout_marginTop="286px"
+        android:layout_width="728px"
+        android:layout_height="728px"
+        android:src="@mipmap/youbiapan_dashboard"
+    />
+
+    <ImageView
+        android:id="@+id/yibiaopandi"
+        android:layout_marginLeft="0px"
+        android:layout_marginTop="904px"
+        android:layout_width="70px"
+        android:layout_height="70px"
+        android:background="@mipmap/yibiaopandi_dashboard"
+    />
+
+    <ImageView
+        android:id="@+id/youxiang"
+        android:layout_marginLeft="645px"
+        android:layout_marginTop="904px"
+        android:layout_width="70px"
+        android:layout_height="70px"
+        android:background="@mipmap/youxiang_dashboard"
+    />
+
+    <ImageView
+        android:id="@+id/anquandai"
+        android:layout_marginLeft="869px"
+        android:layout_marginTop="904px"
+        android:layout_width="70px"
+        android:layout_height="70px"
+        android:background="@mipmap/anquandai_dashboard"
+    />
+
+
+    <ImageView
+        android:id="@+id/shousha"
+        android:layout_marginLeft="957px"
+        android:layout_marginTop="904px"
+        android:layout_width="70px"
+        android:layout_height="70px"
+        android:background="@mipmap/shousha_dashboard"
+    />
+
+    <ImageView
+        android:id="@+id/wendu"
+        android:layout_marginLeft="1108px"
+        android:layout_marginTop="904px"
+        android:layout_width="46px"
+        android:layout_height="70px"
+        android:background="@mipmap/wendu_dashboard"
+    />
+</RelativeLayout>

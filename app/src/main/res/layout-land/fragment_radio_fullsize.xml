@@ -1,0 +1,121 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/xiadi_rd"
+        android:layout_marginLeft="0px"
+        android:layout_marginTop="939px"
+        android:layout_width="match_parent"
+        android:layout_height="116px"
+        android:background="@mipmap/xiadi"
+        />
+
+
+    <ImageView
+        android:id="@+id/boduan_halfsize"
+        android:layout_marginLeft="7px"
+        android:layout_marginTop="943px"
+        android:layout_width="140px"
+        android:layout_height="137px"
+        android:background="@drawable/halfsize_boduan"
+        />
+
+    <ImageView
+        android:id="@+id/jianpan_halfsize"
+        android:layout_marginLeft="262px"
+        android:layout_marginTop="943px"
+        android:layout_width="140px"
+        android:layout_height="137px"
+        android:background="@drawable/halfsize_jianpan"
+        />
+
+    <ImageView
+        android:id="@+id/sousuo_halfsize"
+        android:layout_marginLeft="515px"
+        android:layout_marginTop="943px"
+        android:layout_width="140px"
+        android:layout_height="137px"
+        android:background="@drawable/halfsize_sousuo"
+        />
+
+    <ImageView
+        android:id="@+id/shangyiqu_halfsize"
+        android:layout_marginLeft="768px"
+        android:layout_marginTop="943px"
+        android:layout_width="140px"
+        android:layout_height="137px"
+        android:background="@drawable/halfsize_shangyiqu"
+        />
+
+    <ImageView
+        android:id="@+id/xiayiqu_halfsize"
+        android:layout_marginLeft="1021px"
+        android:layout_marginTop="943px"
+        android:layout_width="140px"
+        android:layout_height="137px"
+        android:background="@drawable/halfsize_xiayiqu"
+        />
+
+
+    <ImageView
+        android:id="@+id/yinxiao_halfsize"
+        android:layout_marginLeft="1271px"
+        android:layout_marginTop="943px"
+        android:layout_width="140px"
+        android:layout_height="137px"
+        android:background="@drawable/halfsize_yinxiao"
+        />
+
+
+
+
+    <ImageView
+        android:id="@+id/gengduo_halfsize"
+        android:layout_marginLeft="1523px"
+        android:layout_marginTop="943px"
+        android:layout_width="140px"
+        android:layout_height="137px"
+        android:background="@drawable/halfsize_gengduo"
+        />
+
+
+
+    <ImageView
+        android:id="@+id/banping_halfsize"
+        android:layout_marginLeft="1773px"
+        android:layout_marginTop="943px"
+        android:layout_width="140px"
+        android:layout_height="137px"
+        android:background="@drawable/halfsize_quanping"
+        />
+
+
+    <ImageView
+        android:id="@+id/gengduodi_halfsize"
+        android:layout_marginLeft="1398px"
+        android:layout_marginTop="829px"
+        android:layout_width="390px"
+        android:layout_height="150px"
+        android:background="@mipmap/kedudi"
+        />
+
+
+    <ImageView
+        android:id="@+id/litiyin_halfsize"
+        android:layout_marginLeft="1271px"
+        android:layout_marginTop="943px"
+        android:layout_width="120px"
+        android:layout_height="102px"
+        android:background="@drawable/halfsize_litiyin"
+        />
+
+<!--    <ImageView
+        android:id="@+id/yuancheng_halfsize"
+        android:layout_marginLeft="1614px"
+        android:layout_marginTop="841px"
+        android:layout_width="120px"
+        android:layout_height="102px"
+        android:background="@drawable/halfsize_yuanche"
+        />-->
+
+</RelativeLayout>

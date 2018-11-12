@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/Btnkuang"
+        android:layout_marginLeft="0px"
+        android:layout_marginTop="765px"
+        android:layout_width="1920px"
+        android:layout_height="315px"
+        android:background="@mipmap/kuang__air"
+        />
+
+    <ImageView
+        android:id="@+id/BtnOn"
+        android:layout_marginLeft="287px"
+        android:layout_marginTop="807px"
+        android:layout_width="165px"
+        android:layout_height="144px"
+        android:background="@drawable/on_air"
+        />
+
+    <ImageView
+        android:id="@+id/btnFanSub"
+        android:layout_marginLeft="774px"
+        android:layout_marginTop="807px"
+        android:layout_width="150px"
+        android:layout_height="144px"
+        android:background="@drawable/fengliangxiao_air"
+        />
+
+    <ImageView
+        android:id="@+id/huadongtiao"
+        android:layout_marginLeft="928px"
+        android:layout_marginTop="807px"
+        android:layout_width="482px"
+        android:layout_height="144px"
+        android:background="@drawable/huadongtiao_air"
+        />
+
+    <ImageView
+        android:id="@+id/fengliangda"
+        android:layout_marginLeft="1436px"
+        android:layout_marginTop="807px"
+        android:layout_width="150px"
+        android:layout_height="144px"
+        android:background="@drawable/fengliangda_air"
+        />
+
+
+    <ImageButton
+        android:id="@+id/BtnLeftAirAdd"
+        android:layout_marginLeft="288px"
+        android:layout_marginTop="954px"
+        android:layout_width="165px"
+        android:layout_height="139px"
+        android:background="@drawable/zuojiare_air"
+        />
+
+    <ImageButton
+        android:id="@+id/ChkRWnd"
+        android:layout_marginLeft="471px"
+        android:layout_marginTop="954px"
+        android:layout_width="165px"
+        android:layout_height="139px"
+        android:background="@drawable/houchuang_air"
+        />
+
+    <CheckBox
+        android:id="@+id/ChkAC"
+        android:layout_marginLeft="653px"
+        android:layout_marginTop="954px"
+        android:layout_width="165px"
+        android:layout_height="139px"
+        android:button="@null"
+        android:background="@drawable/ac_max_air"
+        />
+
+    <CheckBox
+        android:id="@+id/ChkFWnd"
+        android:layout_marginLeft="836px"
+        android:layout_marginTop="954px"
+        android:layout_width="163px"
+        android:layout_height="139px"
+        android:button="@null"
+        android:background="@drawable/qianchuang_air"
+        />
+
+
+
+    <ImageButton
+        android:id="@+id/BtnLeftAirSub"
+        android:layout_marginLeft="1019px"
+        android:layout_marginTop="954px"
+        android:layout_width="163px"
+        android:layout_height="139px"
+        android:background="@drawable/youzhileng_air"
+        />
+
+    <CheckBox
+        android:id="@+id/ChkCarInnerLoop"
+        android:layout_marginLeft="1201px"
+        android:layout_marginTop="954px"
+        android:layout_width="163px"
+        android:layout_height="139px"
+        android:button="@null"
+        android:background="@drawable/neixunhuan_air"
+        />
+
+    <CheckBox
+        android:id="@+id/BtnRightAirSub"
+        android:layout_marginLeft="1384px"
+        android:layout_marginTop="954px"
+        android:layout_width="163px"
+        android:layout_height="139px"
+        android:button="@null"
+        android:background="@drawable/zuozhileng_air"
+        />
+
+
+    <CheckBox
+        android:id="@+id/ChkHuafen"
+        android:layout_marginLeft="1566px"
+        android:layout_marginTop="954px"
+        android:layout_width="163px"
+        android:layout_height="139px"
+        android:button="@null"
+        android:background="@drawable/duzhidao_air"
+        />
+
+    <ImageButton
+        android:id="@+id/BtnRightAirAdd"
+        android:layout_marginLeft="1749px"
+        android:layout_marginTop="954px"
+        android:layout_width="163px"
+        android:layout_height="139px"
+        android:background="@drawable/you_air"
+        />
+
+    <ImageView
+        android:id="@+id/fengxiangren"
+        android:layout_marginLeft="0px"
+        android:layout_marginTop="807dp"
+        android:layout_width="285px"
+        android:layout_height="274px"
+        android:background="@drawable/fengxiangren_air"
+      />
+
+
+
+</RelativeLayout>

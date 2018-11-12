@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/fengmian"
+        android:layout_marginLeft="26px"
+        android:layout_marginTop="289px"
+        android:layout_width="500px"
+        android:layout_height="500px"
+        android:background="@mipmap/fengmian_bluetoothmusic_bluetoothmusic"
+        />
+
+
+    <ImageView
+        android:id="@+id/yinyue"
+        android:layout_marginLeft="553px"
+        android:layout_marginTop="440px"
+        android:layout_width="80px"
+        android:layout_height="80px"
+        android:background="@mipmap/yinyue_bluetoothmusic_bluetoothmusic"
+        />
+
+    <ImageView
+        android:id="@+id/line"
+        android:layout_marginLeft="562px"
+        android:layout_marginTop="531px"
+        android:layout_width="668px"
+        android:layout_height="2px"
+        android:background="@mipmap/line_music"
+        />
+
+
+    <ImageView
+        android:id="@+id/shouji"
+        android:layout_marginLeft="553px"
+        android:layout_marginTop="550px"
+        android:layout_width="80px"
+        android:layout_height="80px"
+        android:background="@mipmap/shouji_music_bluetoothmusic"
+        />
+
+
+    <ImageView
+        android:id="@+id/line_2"
+        android:layout_marginLeft="562px"
+        android:layout_marginTop="640px"
+        android:layout_width="668px"
+        android:layout_height="2px"
+        android:background="@mipmap/line_music"
+        />
+
+
+<!--    <ImageView
+        android:id="@+id/zhuanji"
+        android:layout_marginLeft="702px"
+        android:layout_marginTop="479px"
+        android:layout_width="80px"
+        android:layout_height="80px"
+        android:background="@mipmap/zhuanji_music"
+        />
+    -->
+
+    <ImageView
+        android:id="@+id/BtnStop"
+        android:layout_marginLeft="13px"
+        android:layout_marginTop="930px"
+        android:layout_width="146px"
+        android:layout_height="146px"
+        android:background="@drawable/zanting_bluetoothmusic"
+        />
+
+    <ImageView
+        android:id="@+id/BtnNext"
+        android:layout_marginLeft="254px"
+        android:layout_marginTop="941px"
+        android:layout_width="130px"
+        android:layout_height="130px"
+        android:background="@drawable/xiayiqu_bluetoothmusic"
+        />
+
+    <ImageView
+        android:id="@+id/BtnPrev"
+        android:layout_marginLeft="479px"
+        android:layout_marginTop="941px"
+        android:layout_width="130px"
+        android:layout_height="130px"
+        android:background="@drawable/shangyiqu_bluetoothmusic"
+        />
+
+
+
+    <ImageView
+        android:id="@+id/btnBluetoothMusic"
+        android:layout_marginLeft="707px"
+        android:layout_marginTop="941px"
+        android:layout_width="130px"
+        android:layout_height="130px"
+        android:background="@drawable/lanyashezhi_bluetoothmusic"
+        />
+
+    <ImageButton
+        android:id="@+id/BtnSoundEffect"
+        android:layout_marginLeft="934px"
+        android:layout_marginTop="941px"
+        android:layout_width="130px"
+        android:layout_height="130px"
+        android:background="@drawable/yinxiao_bluetoothmusic"
+        />
+
+    <ImageButton
+        android:id="@+id/BtnFullScreen"
+        android:layout_marginLeft="1160px"
+        android:layout_marginTop="941px"
+        android:layout_width="130px"
+        android:layout_height="130px"
+        android:background="@drawable/quanping_bluetoothmusic"
+        />
+</RelativeLayout>

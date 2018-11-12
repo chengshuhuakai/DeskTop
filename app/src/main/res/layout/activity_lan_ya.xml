@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_lan_ya"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context="com.example.zxw_soft.desktop.LanYaActivity">
+
+
+    <!-- TODO: Update blank fragment layout -->
+    <ImageView
+        android:id="@+id/zuodi"
+        android:layout_width="234px"
+        android:layout_height="860px"
+        android:layout_marginLeft="0px"
+        android:layout_marginTop="220px"
+        android:background="@mipmap/zuodi"
+        />
+
+
+    <!--拨打-->
+    <ImageButton
+        android:id="@+id/BtnDial"
+        android:layout_width="195px"
+        android:layout_height="213px"
+        android:layout_marginLeft="0px"
+        android:layout_marginTop="221px"
+        android:background="@drawable/boda_bt"
+        />
+    <!--通话记录-->
+    <ImageButton
+        android:id="@+id/BtnCallLog"
+        android:layout_width="195px"
+        android:layout_height="213px"
+        android:layout_marginLeft="0px"
+        android:layout_marginTop="436px"
+        android:background="@drawable/tonghuajilu_bt"
+        />
+
+    <ImageButton
+        android:id="@+id/BtnTelBook"
+        android:layout_width="195px"
+        android:layout_height="213px"
+        android:layout_marginLeft="0px"
+        android:layout_marginTop="651px"
+        android:background="@drawable/dianhuaben_bt"
+        />
+
+
+    <ImageButton
+        android:id="@+id/BtnBluetoothtools"
+        android:layout_width="195px"
+        android:layout_height="213px"
+        android:layout_marginLeft="0px"
+        android:layout_marginTop="866px"
+        android:background="@drawable/lanyashebei_bt"
+        />
+
+
+    <ImageView
+        android:id="@+id/line_1"
+        android:layout_width="195px"
+        android:layout_height="2px"
+        android:layout_marginLeft="0px"
+        android:layout_marginTop="434px"
+        android:background="@mipmap/line_1"
+        />
+
+    <ImageView
+        android:id="@+id/line_2"
+        android:layout_width="195px"
+        android:layout_height="2px"
+        android:layout_marginLeft="0px"
+        android:layout_marginTop="649px"
+        android:background="@mipmap/line_2"
+        />
+
+
+    <ImageView
+        android:id="@+id/line_3"
+        android:layout_width="195px"
+        android:layout_height="2px"
+        android:layout_marginLeft="0px"
+        android:layout_marginTop="864px"
+        android:background="@mipmap/line_3"
+        />
+
+    <ImageView
+        android:id="@+id/shangtiao"
+        android:layout_width="1000px"
+        android:layout_height="97px"
+        android:layout_marginLeft="192px"
+        android:layout_marginTop="220px"
+        android:background="@mipmap/shangtiao"
+        />
+
+    <ImageView
+        android:id="@+id/hengxian"
+        android:layout_width="1066px"
+        android:layout_height="2px"
+        android:layout_marginLeft="215px"
+        android:layout_marginTop="571px"
+        android:background="@mipmap/hengxian"
+        />
+    <!-- <fragment
+         android:id="@+id/fragment_left"
+         android:name="com.example.zxw_soft.desktop.MenuFragment"
+
+         android:layout_width="234px"
+         android:layout_height="match_parent"
+         tools:layout="@layout/fragment_menu">
+     </fragment>-->
+    <fragment
+        android:id="@+id/fragment_right"
+        android:name="com.example.zxw_soft.desktop.DisplayFragment"
+        android:layout_width="1664px"
+        android:layout_height="860px"
+        android:layout_marginLeft="215px"
+        android:layout_marginTop="220px">
+    </fragment>
+
+
+
+</RelativeLayout>

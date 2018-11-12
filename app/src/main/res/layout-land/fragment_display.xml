@@ -1,0 +1,205 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context="com.example.zxw_soft.desktop.DisplayFragment">
+
+  <!--  <ImageView
+        android:id="@+id/hengxian"
+        android:layout_width="1066px"
+        android:layout_height="2px"
+        android:layout_marginLeft="215px"
+        android:layout_marginTop="571px"
+        android:background="@mipmap/hengxian"
+        />
+    <ImageView
+        android:id="@+id/jianpandi"
+        android:layout_width="1062px"
+        android:layout_height="242px"
+        android:layout_marginLeft="219px"
+        android:layout_marginTop="689px"
+        android:background="@mipmap/jianpandi"
+        />
+
+    <ImageView
+        android:id="@+id/num_0"
+        android:layout_width="106px"
+        android:layout_height="106px"
+        android:layout_marginLeft="629px"
+        android:layout_marginTop="810px"
+        android:background="@mipmap/num_bohao0_n"
+        />
+
+    <ImageView
+        android:id="@+id/num_1"
+        android:layout_width="106px"
+        android:layout_height="106px"
+        android:layout_marginLeft="286px"
+        android:layout_marginTop="700px"
+        android:background="@mipmap/num_bohao1_n"
+        />
+
+    <ImageView
+        android:id="@+id/num_2"
+        android:layout_width="106px"
+        android:layout_height="106px"
+        android:layout_marginLeft="401px"
+        android:layout_marginTop="700px"
+        android:background="@mipmap/num_bohao2_n"
+        />
+
+    <ImageView
+        android:id="@+id/num_3"
+        android:layout_width="106px"
+        android:layout_height="106px"
+        android:layout_marginLeft="515px"
+        android:layout_marginTop="700px"
+        android:background="@mipmap/num_bohao3_n"
+        />
+
+    <ImageView
+        android:id="@+id/num_4"
+        android:layout_width="106px"
+        android:layout_height="106px"
+        android:layout_marginLeft="629px"
+        android:layout_marginTop="700px"
+        android:background="@mipmap/num_bohao4_n"
+        />
+
+    <ImageView
+        android:id="@+id/num_5"
+        android:layout_width="106px"
+        android:layout_height="106px"
+        android:layout_marginLeft="752px"
+        android:layout_marginTop="700px"
+        android:background="@mipmap/num_bohao5_n"
+        />
+
+    <ImageView
+        android:id="@+id/num_6"
+        android:layout_width="106px"
+        android:layout_height="106px"
+        android:layout_marginLeft="870px"
+        android:layout_marginTop="700px"
+        android:background="@mipmap/num_bohao6_n"
+        />
+
+
+    <ImageView
+        android:id="@+id/num_7"
+        android:layout_width="106px"
+        android:layout_height="106px"
+        android:layout_marginLeft="286px"
+        android:layout_marginTop="810px"
+        android:background="@mipmap/num_bohao7_n"
+        />
+
+    <ImageView
+        android:id="@+id/num_8"
+        android:layout_width="106px"
+        android:layout_height="106px"
+        android:layout_marginLeft="401px"
+        android:layout_marginTop="810px"
+        android:background="@mipmap/num_bohao8_n"
+        />
+
+    <ImageView
+        android:id="@+id/num_9"
+        android:layout_width="106px"
+        android:layout_height="106px"
+        android:layout_marginLeft="515px"
+        android:layout_marginTop="810px"
+        android:background="@mipmap/num_bohao9_n"
+        />
+
+    <ImageView
+        android:id="@+id/jing"
+        android:layout_width="106px"
+        android:layout_height="106px"
+        android:layout_marginLeft="752px"
+        android:layout_marginTop="810px"
+        android:background="@mipmap/jing_bohao_n"
+        />
+
+    <ImageView
+        android:id="@+id/xing"
+        android:layout_width="106px"
+        android:layout_height="106px"
+        android:layout_marginLeft="870px"
+        android:layout_marginTop="810px"
+        android:background="@mipmap/xing_bohao_n"
+        />
+
+    <ImageView
+        android:id="@+id/shanchu"
+        android:layout_width="166px"
+        android:layout_height="106px"
+        android:layout_marginLeft="1079px"
+        android:layout_marginTop="700px"
+        android:background="@mipmap/shanchu_bohao_n"
+        />
+
+    <ImageView
+        android:id="@+id/boda2"
+        android:layout_width="166px"
+        android:layout_height="106px"
+        android:layout_marginLeft="1079px"
+        android:layout_marginTop="810px"
+        android:background="@mipmap/boda2_n"
+        />
+
+    <ImageView
+        android:id="@+id/fengetiao"
+        android:layout_width="39px"
+        android:layout_height="860px"
+        android:layout_marginLeft="1298px"
+        android:layout_marginTop="220px"
+        android:background="@mipmap/fengetiao"
+        />
+
+    <ImageView
+        android:id="@+id/dian_d"
+        android:layout_width="28px"
+        android:layout_height="28px"
+        android:layout_marginLeft="1305px"
+        android:layout_marginTop="606px"
+        android:background="@mipmap/dian_d"
+        />
+
+    <ImageView
+        android:id="@+id/dian_n"
+        android:layout_width="28px"
+        android:layout_height="28px"
+        android:layout_marginLeft="1305px"
+        android:layout_marginTop="635px"
+        android:background="@mipmap/dian_n"
+        />
+
+    <ImageView
+        android:id="@+id/youdi"
+        android:layout_width="583px"
+        android:layout_height="860px"
+        android:layout_marginLeft="1377px"
+        android:layout_marginTop="220px"
+        android:background="@mipmap/youdi"
+        />
+
+    <ImageView
+        android:id="@+id/shangtiao"
+        android:layout_width="1000px"
+        android:layout_height="97px"
+        android:layout_marginLeft="192px"
+        android:layout_marginTop="220px"
+        android:background="@mipmap/shangtiao"
+        />
+
+    <ImageView
+        android:id="@+id/hengxian1"
+        android:layout_width="1066px"
+        android:layout_height="2px"
+        android:layout_marginLeft="215px"
+        android:layout_marginTop="571px"
+        android:background="@mipmap/hengxian"
+        />
+-->
+</RelativeLayout>

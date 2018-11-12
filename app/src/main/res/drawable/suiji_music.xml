@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true" android:drawable="@mipmap/suiji_d_music"></item>
+    <item android:state_pressed="false" android:drawable="@mipmap/suiji_n_music"></item>
+</selector>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/xian"
+        android:layout_marginLeft="1337px"
+        android:layout_marginTop="388px"
+        android:layout_width="583px"
+        android:layout_height="374px"
+        android:background="@mipmap/xian_navi"
+        />
+
+
+    <ImageView
+        android:id="@+id/youzhuan"
+        android:layout_marginLeft="1491px"
+        android:layout_marginTop="388px"
+        android:layout_width="277px"
+        android:layout_height="277px"
+        android:background="@mipmap/youzhuan_navi"
+        />
+
+
+    <ImageView
+        android:id="@+id/honglvdeng"
+        android:layout_marginLeft="1486px"
+        android:layout_marginTop="801px"
+        android:layout_width="120px"
+        android:layout_height="120px"
+        android:background="@mipmap/honglvdeng_navi"
+        />
+
+
+    <ImageView
+        android:id="@+id/yoankuang"
+        android:layout_marginLeft="1652px"
+        android:layout_marginTop="801px"
+        android:layout_width="120px"
+        android:layout_height="120px"
+        android:background="@mipmap/yuankuang_navi"
+        />
+
+</RelativeLayout>

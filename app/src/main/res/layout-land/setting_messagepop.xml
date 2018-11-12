@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/View_tanchukuang"
+        android:layout_width="1920px"
+        android:layout_height="680px"
+        android:layout_marginLeft="0px"
+        android:layout_marginTop="220px"
+        android:background="@mipmap/tanchukuang_mp"
+        />
+
+
+
+    <ImageButton
+        android:id="@+id/BtnChecked"
+        android:layout_width="142px"
+        android:layout_height="142px"
+        android:layout_marginLeft="639px"
+        android:layout_marginTop="568px"
+        android:background="@drawable/dui_mp"
+        />
+
+    <ImageButton
+        android:id="@+id/BtnRefuse"
+        android:layout_width="142px"
+        android:layout_height="142px"
+        android:layout_marginLeft="1128px"
+        android:layout_marginTop="569px"
+        android:background="@drawable/cuo_mp"
+        />
+</FrameLayout>

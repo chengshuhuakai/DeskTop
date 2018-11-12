@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <ImageButton
+        android:id="@+id/Btnyouhao"
+        android:layout_marginLeft="156px"
+        android:layout_marginTop="471px"
+        android:layout_width="320px"
+        android:layout_height="320px"
+        android:background="@drawable/youhao_icon"
+        />
+
+    <ImageButton
+        android:id="@+id/Btnyuanche"
+        android:layout_marginLeft="585px"
+        android:layout_marginTop="471px"
+        android:layout_width="320px"
+        android:layout_height="320px"
+        android:background="@drawable/yuanche_icon"
+        />
+
+    <ImageButton
+        android:id="@+id/Btntaiya"
+        android:layout_marginLeft="1015px"
+        android:layout_marginTop="471px"
+        android:layout_width="320px"
+        android:layout_height="320px"
+        android:background="@drawable/taiya_icon"
+        />
+
+    <ImageButton
+        android:id="@+id/Btngongfang"
+        android:layout_marginLeft="1445px"
+        android:layout_marginTop="471px"
+        android:layout_width="320px"
+        android:layout_height="320px"
+        android:background="@drawable/gongfang_icon"
+        />
+</RelativeLayout>

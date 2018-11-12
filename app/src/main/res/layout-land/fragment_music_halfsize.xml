@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/fengmian"
+        android:layout_marginLeft="26px"
+        android:layout_marginTop="289px"
+        android:layout_width="500px"
+        android:layout_height="500px"
+        android:background="@mipmap/fengmian_music"
+        />
+
+    <ImageView
+        android:id="@+id/yinyue"
+        android:layout_marginLeft="537px"
+        android:layout_marginTop="303px"
+        android:layout_width="80px"
+        android:layout_height="80px"
+        android:background="@mipmap/yinyue_music"
+        />
+
+    <ImageView
+        android:id="@+id/line"
+        android:layout_marginLeft="547px"
+        android:layout_marginTop="385px"
+        android:layout_width="668px"
+        android:layout_height="2px"
+        android:background="@mipmap/line_music"
+        />
+
+
+    <ImageView
+        android:id="@+id/renwu"
+        android:layout_marginLeft="537px"
+        android:layout_width="80px"
+        android:layout_height="80px"
+        android:background="@mipmap/renwu_music"
+        android:layout_below="@+id/yinyue"
+        android:layout_alignStart="@+id/yinyue"/>
+
+
+    <ImageView
+        android:id="@+id/line_2"
+        android:layout_marginLeft="547px"
+        android:layout_marginTop="472px"
+        android:layout_width="668px"
+        android:layout_height="2px"
+        android:background="@mipmap/line_music"
+        />
+
+    <ImageView
+        android:id="@+id/line_3"
+        android:layout_marginLeft="547px"
+        android:layout_marginTop="559px"
+        android:layout_width="668px"
+        android:layout_height="2px"
+        android:background="@mipmap/line_music"
+        />
+
+    <ImageView
+        android:id="@+id/tiao_n"
+        android:layout_marginLeft="143px"
+        android:layout_marginTop="891px"
+        android:layout_width="1008px"
+        android:layout_height="38px"
+        android:background="@drawable/tiao_music"
+        />
+
+
+    <ImageView
+        android:id="@+id/huakuai"
+        android:layout_marginLeft="967px"
+        android:layout_marginTop="891px"
+        android:layout_width="38px"
+        android:layout_height="38px"
+        android:background="@mipmap/huakuai_music"
+        />
+
+
+    <ImageButton
+        android:id="@+id/BtnStop"
+        android:layout_marginLeft="13px"
+        android:layout_marginTop="930px"
+        android:layout_width="146px"
+        android:layout_height="146px"
+        android:background="@drawable/zanting_music"
+        />
+
+    <ImageButton
+        android:id="@+id/BtnNext"
+        android:layout_marginLeft="218px"
+        android:layout_marginTop="941px"
+        android:layout_width="130px"
+        android:layout_height="130px"
+        android:background="@drawable/xiayiqu_music"
+        />
+
+    <ImageView
+        android:id="@+id/BtnPrev"
+        android:layout_marginLeft="396px"
+        android:layout_marginTop="941px"
+        android:layout_width="130px"
+        android:layout_height="130px"
+        android:background="@drawable/shangyiqu_music"
+        />
+
+    <ImageButton
+        android:id="@+id/BtnLoopMode"
+        android:layout_marginLeft="579px"
+        android:layout_marginTop="941px"
+        android:layout_width="130px"
+        android:layout_height="130px"
+        android:background="@drawable/suiji_music"
+        />
+
+    <ImageButton
+        android:id="@+id/BtnFileList"
+        android:layout_marginLeft="778px"
+        android:layout_marginTop="941px"
+        android:layout_width="130px"
+        android:layout_height="130px"
+        android:background="@drawable/liebiao_music"
+        />
+
+    <ImageButton
+        android:id="@+id/BtnSoundEffect"
+        android:layout_marginLeft="972px"
+        android:layout_marginTop="941px"
+        android:layout_width="130px"
+        android:layout_height="130px"
+        android:background="@drawable/yinxiao_music"
+        />
+
+    <ImageView
+        android:id="@+id/BtnFullScreen"
+        android:layout_marginLeft="1160px"
+        android:layout_marginTop="941px"
+        android:layout_width="130px"
+        android:layout_height="130px"
+        android:background="@drawable/quanping_music"
+        />
+
+    <ImageView
+        android:id="@+id/pinpu"
+        android:layout_marginLeft="540px"
+        android:layout_marginTop="650px"
+        android:layout_width="680px"
+        android:layout_height="220px"
+        android:background="@mipmap/pinpu_music"
+        />
+
+
+
+    <ImageView
+        android:id="@+id/zhuanji"
+        android:layout_marginLeft="537px"
+        android:layout_width="80px"
+        android:layout_height="80px"
+        android:background="@mipmap/zhuanji_music"
+        android:layout_alignBottom="@+id/line_3"
+        android:layout_alignStart="@+id/renwu"/>
+</RelativeLayout>

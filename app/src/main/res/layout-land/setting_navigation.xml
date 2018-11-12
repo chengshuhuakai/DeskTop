@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/ng_fengmian_1"
+        android:layout_width="80px"
+        android:layout_height="80px"
+        android:layout_marginLeft="226px"
+        android:layout_marginTop="359px"
+        android:background="@mipmap/fengmian_1_ng"
+        />
+
+    <ImageView
+        android:id="@+id/ng_fengmian_2"
+        android:layout_width="80px"
+        android:layout_height="80px"
+        android:layout_marginLeft="226px"
+        android:layout_marginTop="485px"
+        android:background="@mipmap/fengmian_2_ng"
+        />
+
+
+    <ImageView
+        android:id="@+id/ng_fengmian_3"
+        android:layout_width="80px"
+        android:layout_height="80px"
+        android:layout_marginLeft="226px"
+        android:layout_marginTop="615px"
+        android:background="@mipmap/fengmian_3_ng"
+        />
+
+    <ImageView
+        android:id="@+id/ng_line"
+        android:layout_width="1657px"
+        android:layout_height="2px"
+        android:layout_marginLeft="220px"
+        android:layout_marginTop="448px"
+        android:background="@mipmap/line_ng"
+        />
+
+
+    <ImageView
+        android:id="@+id/ng_queren"
+        android:layout_width="370px"
+        android:layout_height="120px"
+        android:layout_marginLeft="870px"
+        android:layout_marginTop="917px"
+        android:background="@mipmap/queren_n_ng"
+        />
+</FrameLayout>

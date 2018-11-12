@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/che"
+        android:layout_marginLeft="494px"
+        android:layout_marginTop="340px"
+        android:layout_width="311px"
+        android:layout_height="705px"
+        android:background="@mipmap/che_tirepress"
+        />
+
+    <ImageView
+        android:id="@+id/luntai1"
+        android:layout_marginLeft="516px"
+        android:layout_marginTop="428px"
+        android:layout_width="60px"
+        android:layout_height="114px"
+        android:background="@drawable/luntai1_tirepress"
+        />
+
+    <ImageView
+        android:id="@+id/luntai2"
+        android:layout_marginLeft="734px"
+        android:layout_marginTop="428px"
+        android:layout_width="60px"
+        android:layout_height="114px"
+        android:background="@drawable/luntai2_tirepress"
+        />
+
+    <ImageView
+        android:id="@+id/luntai3"
+        android:layout_marginLeft="516px"
+        android:layout_marginTop="846px"
+        android:layout_width="60px"
+        android:layout_height="114px"
+        android:background="@drawable/luntai3_tirepress"
+        />
+
+    <ImageView
+        android:id="@+id/luntai4"
+        android:layout_marginLeft="734px"
+        android:layout_marginTop="846px"
+        android:layout_width="60px"
+        android:layout_height="114px"
+        android:background="@drawable/luntai4_tirepress"
+        />
+
+
+    <ImageView
+        android:id="@+id/zuoqian"
+        android:layout_marginLeft="38px"
+        android:layout_marginTop="400px"
+        android:layout_width="485px"
+        android:layout_height="204px"
+        android:background="@drawable/zuoqian_tirepress"
+        />
+
+    <ImageView
+        android:id="@+id/youqian"
+        android:layout_marginLeft="786px"
+        android:layout_marginTop="400px"
+        android:layout_width="485px"
+        android:layout_height="204px"
+        android:background="@drawable/youqian_tirepress"
+        />
+
+    <ImageView
+        android:id="@+id/zuohou"
+        android:layout_marginLeft="38px"
+        android:layout_marginTop="774px"
+        android:layout_width="485px"
+        android:layout_height="204px"
+        android:background="@drawable/zuohou_tirepress"
+        />
+
+    <ImageView
+        android:id="@+id/youhou"
+        android:layout_marginLeft="786px"
+        android:layout_marginTop="774px"
+        android:layout_width="485px"
+        android:layout_height="204px"
+        android:background="@drawable/youhou_tirepress"
+        />
+</RelativeLayout>

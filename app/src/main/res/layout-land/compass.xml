@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/zhinanzhendi"
+        android:layout_marginLeft="1420px"
+        android:layout_marginTop="406px"
+        android:layout_width="420px"
+        android:layout_height="420px"
+        android:background="@mipmap/zhinanzhendi_compass"
+        />
+
+    <ImageView
+        android:id="@+id/zuoche"
+        android:layout_marginLeft="1371px"
+        android:layout_marginTop="802px"
+        android:layout_width="240px"
+        android:layout_height="240px"
+        android:background="@mipmap/zuoche_compass"
+        />
+
+
+
+    <ImageView
+        android:id="@+id/youche"
+        android:layout_marginLeft="1647px"
+        android:layout_marginTop="802px"
+        android:layout_width="240px"
+        android:layout_height="240px"
+        android:background="@mipmap/youche_compass"
+        />
+
+
+
+</RelativeLayout>

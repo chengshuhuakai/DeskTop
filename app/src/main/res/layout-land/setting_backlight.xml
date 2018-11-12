@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/iv_liangdujian"
+        android:layout_width="134px"
+        android:layout_height="134px"
+        android:layout_marginLeft="305px"
+        android:layout_marginTop="384px"
+        android:background="@mipmap/lliangdujian_n"
+        />
+
+    <ImageView
+        android:id="@+id/iv_liangdujia"
+        android:layout_width="134px"
+        android:layout_height="134px"
+        android:layout_marginLeft="1677px"
+        android:layout_marginTop="384px"
+        android:background="@mipmap/liangdujia_n"
+        />
+
+    <ImageView
+        android:id="@+id/iv_tiao1"
+        android:layout_width="1166px"
+        android:layout_height="72px"
+        android:layout_marginLeft="470px"
+        android:layout_marginTop="418px"
+        android:background="@mipmap/tiao1_n"
+        />
+
+
+    <ImageView
+        android:id="@+id/iv_huakuai1"
+        android:layout_width="30px"
+        android:layout_height="72px"
+        android:layout_marginLeft="1604px"
+        android:layout_marginTop="418px"
+        android:background="@mipmap/huakuai"
+        />
+
+    <ImageView
+        android:id="@+id/iv_yueliangjian"
+        android:layout_width="134px"
+        android:layout_height="134px"
+        android:layout_marginLeft="305px"
+        android:layout_marginTop="553px"
+        android:background="@mipmap/yueliangjian_n"
+        />
+
+    <ImageView
+        android:id="@+id/iv_yueliangjia"
+        android:layout_width="134px"
+        android:layout_height="134px"
+        android:layout_marginLeft="1677px"
+        android:layout_marginTop="553px"
+        android:background="@mipmap/yueliangjia_n"
+        />
+
+    <ImageView
+        android:id="@+id/iv_tiao2"
+        android:layout_width="1166px"
+        android:layout_height="72px"
+        android:layout_marginLeft="470px"
+        android:layout_marginTop="588px"
+        android:background="@mipmap/tiao2_n"
+        />
+
+    <ImageView
+        android:id="@+id/iv_huakuai2"
+        android:layout_width="30px"
+        android:layout_height="72px"
+        android:layout_marginLeft="1604px"
+        android:layout_marginTop="588px"
+        android:background="@mipmap/huakuai_02"
+        />
+
+    <ImageView
+    android:id="@+id/iv_hengxian"
+    android:layout_width="1657px"
+    android:layout_height="2px"
+    android:layout_marginLeft="226px"
+    android:layout_marginTop="751px"
+    android:background="@mipmap/hengxian"
+    />
+
+    <ImageView
+        android:id="@+id/iv_bg1"
+        android:layout_width="230px"
+        android:layout_height="190px"
+        android:layout_marginLeft="320px"
+        android:layout_marginTop="815px"
+        android:background="@mipmap/beijing1_n"
+        />
+
+    <ImageView
+        android:id="@+id/iv_bg2"
+        android:layout_width="230px"
+        android:layout_height="190px"
+        android:layout_marginLeft="564px"
+        android:layout_marginTop="815px"
+        android:background="@mipmap/beijing2_n"
+        />
+
+    <ImageView
+        android:id="@+id/iv_bg3"
+        android:layout_width="230px"
+        android:layout_height="190px"
+        android:layout_marginLeft="808px"
+        android:layout_marginTop="815px"
+        android:background="@mipmap/beijing3_n"
+        />
+
+    <ImageView
+        android:id="@+id/iv_bg4"
+        android:layout_width="230px"
+        android:layout_height="190px"
+        android:layout_marginLeft="1056px"
+        android:layout_marginTop="815px"
+        android:background="@mipmap/beijing4_n"
+        />
+
+    <ImageView
+        android:id="@+id/iv_bg5"
+        android:layout_width="230px"
+        android:layout_height="190px"
+        android:layout_marginLeft="1309px"
+        android:layout_marginTop="815px"
+        android:background="@mipmap/beijing5_n"
+        />
+
+    <ImageView
+        android:id="@+id/iv_bg6"
+        android:layout_width="230px"
+        android:layout_height="190px"
+        android:layout_marginLeft="1565px"
+        android:layout_marginTop="815px"
+        android:background="@mipmap/beijing6_n"
+        />
+</FrameLayout>

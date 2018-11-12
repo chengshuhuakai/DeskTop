@@ -1,0 +1,110 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context="com.example.zxw_soft.desktop.MenuFragment_Setting">
+
+        <ImageView
+            android:id="@+id/zuodi"
+            android:layout_width="234px"
+            android:layout_height="860px"
+            android:layout_marginLeft="0px"
+            android:layout_marginTop="220px"
+            android:background="@mipmap/zuodi"
+            />
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/view_recycle"
+            android:layout_marginLeft="0px"
+            android:layout_marginTop="221px"
+            android:layout_width="195px"
+            android:layout_height="852px">
+               <!-- <ImageButton
+                    android:id="@+id/fangxiangpan"
+                    android:layout_width="195px"
+                    android:layout_height="213px"
+                    android:layout_marginLeft="0px"
+                    android:layout_marginTop="221px"
+                    android:background="@drawable/fangxinagpan_ms"
+                    />
+
+                <ImageButton
+                    android:id="@+id/beiguang"
+                    android:layout_width="195px"
+                    android:layout_height="213px"
+                    android:layout_marginLeft="0px"
+                    android:layout_marginTop="436px"
+                    android:background="@drawable/beiguang_ms"
+                    />
+
+                <ImageButton
+                    android:id="@+id/gengduo"
+                    android:layout_width="195px"
+                    android:layout_height="213px"
+                    android:layout_marginLeft="0px"
+                    android:layout_marginTop="651px"
+                    android:background="@drawable/gengduo_ms"
+                    />
+
+
+                <ImageButton
+                    android:id="@+id/gps"
+                    android:layout_width="195px"
+                    android:layout_height="213px"
+                    android:layout_marginLeft="0px"
+                    android:layout_marginTop="866px"
+                    android:background="@drawable/gps_ms"
+                    />
+-->
+
+        </android.support.v7.widget.RecyclerView>
+
+
+
+        <ImageView
+            android:id="@+id/line_1"
+            android:layout_width="195px"
+            android:layout_height="2px"
+            android:layout_marginLeft="0px"
+            android:layout_marginTop="434px"
+            android:background="@mipmap/line_1"
+            />
+
+        <ImageView
+            android:id="@+id/line_2"
+            android:layout_width="195px"
+            android:layout_height="2px"
+            android:layout_marginLeft="0px"
+            android:layout_marginTop="649px"
+            android:background="@mipmap/line_2"
+            />
+
+
+        <ImageView
+            android:id="@+id/line_3"
+            android:layout_width="195px"
+            android:layout_height="2px"
+            android:layout_marginLeft="0px"
+            android:layout_marginTop="864px"
+            android:background="@mipmap/line_3"
+            />
+
+        <ImageView
+            android:id="@+id/shangtiao"
+            android:layout_width="1000px"
+            android:layout_height="97px"
+            android:layout_marginLeft="192px"
+            android:layout_marginTop="220px"
+            android:background="@mipmap/shangtiao"
+            />
+
+        <ImageView
+            android:id="@+id/hengxian"
+            android:layout_width="1066px"
+            android:layout_height="2px"
+            android:layout_marginLeft="215px"
+            android:layout_marginTop="571px"
+            android:background="@mipmap/hengxian"
+            />
+    </RelativeLayout>
+
+

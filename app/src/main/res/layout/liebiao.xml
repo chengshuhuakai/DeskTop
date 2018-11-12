@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/line_1"
+        android:layout_marginLeft="220px"
+        android:layout_marginTop="448px"
+        android:layout_width="692px"
+        android:layout_height="2px"
+        android:background="@mipmap/line_1_liebiao"
+        />
+
+    <ImageView
+        android:id="@+id/d"
+        android:layout_marginLeft="210px"
+        android:layout_marginTop="450px"
+        android:layout_width="702px"
+        android:layout_height="129px"
+        android:background="@mipmap/d_liebiao"
+        />
+
+    <ImageView
+        android:id="@+id/wenjianjia"
+        android:layout_marginLeft="220px"
+        android:layout_marginTop="448px"
+        android:layout_width="129px"
+        android:layout_height="129px"
+        android:background="@mipmap/wenjianjia_liebiao"
+        />
+    <ImageView
+        android:id="@+id/huakuai1"
+        android:layout_marginLeft="913px"
+        android:layout_marginTop="329px"
+        android:layout_width="26px"
+        android:layout_height="76px"
+        android:background="@mipmap/huakuai_1_liebiao"
+        />
+
+
+    <ImageView
+        android:id="@+id/shuxian"
+        android:layout_marginLeft="946px"
+        android:layout_marginTop="327px"
+        android:layout_width="2px"
+        android:layout_height="738px"
+        android:background="@mipmap/shuxian_liebiao"
+        />
+
+    <ImageView
+        android:id="@+id/line_2"
+        android:layout_marginLeft="978px"
+        android:layout_marginTop="448px"
+        android:layout_width="897px"
+        android:layout_height="2px"
+        android:background="@mipmap/line_2_liebiao"
+        />
+
+
+    <ImageView
+        android:id="@+id/d_2"
+        android:layout_marginLeft="978px"
+        android:layout_marginTop="450px"
+        android:layout_width="897px"
+        android:layout_height="129px"
+        android:background="@mipmap/d_2_liebiao"
+        />
+
+
+
+</RelativeLayout>
