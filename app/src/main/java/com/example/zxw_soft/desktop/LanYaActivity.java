@@ -41,7 +41,7 @@ public class LanYaActivity extends FragmentActivity {
         setContentView(R.layout.activity_lan_ya);
         //initView();
         //初始化目录数据
-       // initMenuItem();
+        //initMenuItem();
         initView();
     }
 
@@ -114,7 +114,7 @@ public class LanYaActivity extends FragmentActivity {
         mBt_tonghuajilu.setOnClickListener(new LanYaActivity.ButtonListener());
         mBt_dianhuaben.setOnClickListener(new LanYaActivity.ButtonListener());
         mBt_lanyashebei.setOnClickListener(new LanYaActivity.ButtonListener());
-        // replaceRightFragment(new BodaFragment());
+         replaceRightFragment(new BodaFragment());
     }
 
     class ButtonListener implements View.OnClickListener {

@@ -144,7 +144,6 @@ public class MainActivity extends Activity implements View.OnClickListener {
         public void destroyItem(View container, int position, Object object) {
 
         }
-
         @Override
         public Object instantiateItem(View container, int position) {
             //Log.i(TAG, "position = " + position);
@@ -170,8 +169,6 @@ public class MainActivity extends Activity implements View.OnClickListener {
         }
 
     }
-
-
        /*  switch (checkedId){
            case R.id.bg_daohang:
            case R.id.bg_shouyin:
@@ -239,9 +236,10 @@ public class MainActivity extends Activity implements View.OnClickListener {
             case R.id.btnSetting:
                 showShezhi();
                 Log.d(TAG,"showSheZhi()方法执行了");
-
+                break;
             case R.id.btnBluetooth:
                 showLanya();
+                break;
         }
 
     }

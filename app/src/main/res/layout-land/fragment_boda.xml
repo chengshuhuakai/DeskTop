@@ -1,108 +1,36 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 xmlns:tools="http://schemas.android.com/tools"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginLeft="-215px"
+                android:layout_width="1920px"
+                android:layout_height="1080px"
+                android:layout_marginLeft="-195px"
                 android:layout_marginTop="-220px"
                 tools:context="com.example.zxw_soft.desktop.BodaFragment">
 
-<!--
-    &lt;!&ndash; TODO: Update blank fragment layout &ndash;&gt;
-
-    <ImageView
-        android:id="@+id/zuodi"
-        android:layout_width="234px"
+    <RelativeLayout
+        android:layout_width="1103px"
         android:layout_height="860px"
-        android:layout_marginLeft="0px"
+        android:layout_marginLeft="195px"
         android:layout_marginTop="220px"
-        android:background="@mipmap/zuodi"
-        />
+        android:background="@mipmap/background_bluetooth">
+    </RelativeLayout>
 
+    <!--    <ImageView
+            android:id="@+id/shangtiao"
+            android:layout_width="1000px"
+            android:layout_height="97px"
+            android:layout_marginLeft="192px"
+            android:layout_marginTop="220px"
+            android:background="@mipmap/shangtiao"
+            />-->
 
-    <ImageButton
-        android:id="@+id/boda"
-        android:layout_width="195px"
-        android:layout_height="213px"
-        android:layout_marginLeft="0px"
-        android:layout_marginTop="221px"
-        android:background="@drawable/boda_bt"
-        />
-
-    <ImageButton
-        android:id="@+id/tonghuajilu"
-        android:layout_width="195px"
-        android:layout_height="213px"
-        android:layout_marginLeft="0px"
-        android:layout_marginTop="436px"
-        android:background="@drawable/tonghuajilu_bt"
-        />
-
-    <ImageButton
-        android:id="@+id/dianhuaben"
-        android:layout_width="195px"
-        android:layout_height="213px"
-        android:layout_marginLeft="0px"
-        android:layout_marginTop="651px"
-        android:background="@drawable/dianhuaben_bt"
-        />
-
-
-    <ImageButton
-        android:id="@+id/lanyashebei"
-        android:layout_width="195px"
-        android:layout_height="213px"
-        android:layout_marginLeft="0px"
-        android:layout_marginTop="866px"
-        android:background="@drawable/lanyashebei_bt"
-        />
-
-
-    <ImageView
-        android:id="@+id/line_1"
-        android:layout_width="195px"
-        android:layout_height="2px"
-        android:layout_marginLeft="0px"
-        android:layout_marginTop="434px"
-        android:background="@mipmap/line_1"
-        />
-
-    <ImageView
-        android:id="@+id/line_2"
-        android:layout_width="195px"
-        android:layout_height="2px"
-        android:layout_marginLeft="0px"
-        android:layout_marginTop="649px"
-        android:background="@mipmap/line_2"
-        />
-
-
-    <ImageView
-        android:id="@+id/line_3"
-        android:layout_width="195px"
-        android:layout_height="2px"
-        android:layout_marginLeft="0px"
-        android:layout_marginTop="864px"
-        android:background="@mipmap/line_3"
-        />
--->
-
-    <ImageView
-        android:id="@+id/shangtiao"
-        android:layout_width="1000px"
-        android:layout_height="97px"
-        android:layout_marginLeft="192px"
-        android:layout_marginTop="220px"
-        android:background="@mipmap/shangtiao"
-        />
-
-    <ImageView
-        android:id="@+id/hengxian"
-        android:layout_width="1066px"
-        android:layout_height="2px"
-        android:layout_marginLeft="215px"
-        android:layout_marginTop="571px"
-        android:background="@mipmap/hengxian"
-        />
+    <!--      <ImageView
+              android:id="@+id/hengxian"
+              android:layout_width="1066px"
+              android:layout_height="2px"
+              android:layout_marginLeft="215px"
+              android:layout_marginTop="571px"
+              android:background="@mipmap/hengxian"
+              />-->
     <ImageView
         android:id="@+id/jianpandi"
         android:layout_width="1062px"
@@ -270,7 +198,7 @@
         android:id="@+id/youdi"
         android:layout_width="583px"
         android:layout_height="860px"
-        android:layout_marginLeft="1377px"
+        android:layout_marginLeft="1337px"
         android:layout_marginTop="220px"
         android:background="@mipmap/youdi"
         />

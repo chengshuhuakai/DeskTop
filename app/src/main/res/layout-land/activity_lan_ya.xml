@@ -8,6 +8,15 @@
     android:orientation="horizontal"
     tools:context="com.example.zxw_soft.desktop.LanYaActivity">
 
+    <fragment
+        android:id="@+id/fragment_right"
+        android:name="com.example.zxw_soft.desktop.DisplayFragment"
+        android:layout_width="1725px"
+        android:layout_height="860px"
+        android:layout_marginLeft="195px"
+        android:layout_marginTop="220px">
+    </fragment>
+
 
     <!-- TODO: Update blank fragment layout -->
     <ImageView
@@ -112,14 +121,7 @@
          android:layout_height="match_parent"
          tools:layout="@layout/fragment_menu">
      </fragment>-->
-    <fragment
-        android:id="@+id/fragment_right"
-        android:name="com.example.zxw_soft.desktop.DisplayFragment"
-        android:layout_width="1664px"
-        android:layout_height="860px"
-        android:layout_marginLeft="215px"
-        android:layout_marginTop="220px">
-    </fragment>
+
 
 
 

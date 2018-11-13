@@ -3,6 +3,14 @@
              android:layout_width="match_parent"
              android:layout_height="match_parent">
 
+    <RelativeLayout
+        android:layout_width="1103px"
+        android:layout_height="860px"
+        android:layout_marginLeft="195px"
+        android:layout_marginTop="220px"
+        android:background="@mipmap/background_bluetooth">
+    </RelativeLayout>
+
     <ImageView
         android:id="@+id/zuodi"
         android:layout_width="234px"
@@ -263,7 +271,7 @@
         android:id="@+id/youdi"
         android:layout_width="583px"
         android:layout_height="860px"
-        android:layout_marginLeft="1377px"
+        android:layout_marginLeft="1337px"
         android:layout_marginTop="220px"
         android:background="@mipmap/youdi"
         />

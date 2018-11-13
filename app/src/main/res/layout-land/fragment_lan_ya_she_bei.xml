@@ -1,10 +1,64 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
              xmlns:tools="http://schemas.android.com/tools"
-             android:layout_width="match_parent"
-             android:layout_height="match_parent"
-             android:layout_marginLeft="-215px"
+             android:layout_width="1920px"
+             android:layout_height="1080px"
+             android:layout_marginLeft="-195px"
              android:layout_marginTop="-220px"
              tools:context="com.example.zxw_soft.desktop.LanYaSheBeiFragment">
+
+    <RelativeLayout
+        android:layout_width="1103px"
+        android:layout_height="860px"
+        android:layout_marginLeft="195px"
+        android:layout_marginTop="220px"
+        android:background="@mipmap/background_bluetooth">
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/fengetiao"
+        android:layout_width="39px"
+        android:layout_height="860px"
+        android:layout_marginLeft="1298px"
+        android:layout_marginTop="220px"
+        android:background="@mipmap/fengetiao"
+        />
+
+    <ImageView
+        android:id="@+id/dian_d"
+        android:layout_width="28px"
+        android:layout_height="28px"
+        android:layout_marginLeft="1305px"
+        android:layout_marginTop="606px"
+        android:background="@mipmap/dian_d"
+        />
+
+    <ImageView
+        android:id="@+id/dian_n"
+        android:layout_width="28px"
+        android:layout_height="28px"
+        android:layout_marginLeft="1305px"
+        android:layout_marginTop="635px"
+        android:background="@mipmap/dian_n"
+        />
+
+    <ImageView
+        android:id="@+id/youdi"
+        android:layout_width="583px"
+        android:layout_height="860px"
+        android:layout_marginLeft="1337px"
+        android:layout_marginTop="220px"
+        android:background="@mipmap/youdi"
+        />
+
+    <ImageView
+        android:id="@+id/di"
+        android:layout_width="1076px"
+        android:layout_height="129px"
+        android:layout_marginLeft="210px"
+        android:layout_marginTop="453px"
+        android:background="@mipmap/di"
+        />
+
 
     <ImageView
         android:background="@mipmap/hengxian_1"
