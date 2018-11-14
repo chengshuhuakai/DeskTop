@@ -75,47 +75,47 @@ public class SettingActivity extends FragmentActivity  {
             switch (v.getId()){
                 case R.id.BtnBackLight:
                     Toast.makeText(getApplicationContext(),"BackLightFragment创建了",Toast.LENGTH_LONG).show();
-                    replaceRightFragment(new BodaFragment());
+                    replaceRightFragment(new BackLightFragment());
                     break;
                 case R.id.BtnFactorySetting:
                     Toast.makeText(getApplicationContext(),"FactorySettingFragment创建了",Toast.LENGTH_LONG).show();
-                    replaceRightFragment(new TongHuaJiLuFragment());
+                    replaceRightFragment(new FactorySettingFragment());
                     break;
                 case R.id.BtnNav:
                     Toast.makeText(getApplicationContext(),"NavFragment创建了",Toast.LENGTH_LONG).show();
-                    replaceRightFragment(new DianHuaBenFragment());
+                    replaceRightFragment(new NavFragment());
                     break;
                 case R.id.BtnSteeringWheel:
                     Toast.makeText(getApplicationContext(),"SteeringWheelFragment创建了",Toast.LENGTH_LONG).show();
-                    replaceRightFragment(new LanYaSheBeiFragment());
+                    replaceRightFragment(new SteeringWheelFragment());
                     break;
                 case R.id.BtnMore:
                     Toast.makeText(getApplicationContext(),"MoreFragment创建了",Toast.LENGTH_LONG).show();
-                    replaceRightFragment(new LanYaSheBeiFragment());
+                    replaceRightFragment(new MoreFragment());
                     break;
                 case R.id.BtnGPS:
                     Toast.makeText(getApplicationContext(),"GPSFragment创建了",Toast.LENGTH_LONG).show();
-                    replaceRightFragment(new LanYaSheBeiFragment());
+                    replaceRightFragment(new GpsFragment());
                     break;
                 case R.id.BtnTime:
                     Toast.makeText(getApplicationContext(),"TimeFragment创建了",Toast.LENGTH_LONG).show();
-                    replaceRightFragment(new LanYaSheBeiFragment());
+                    replaceRightFragment(new TimeFragment());
                     break;
                 case R.id.BtnSystemSetting:
                     Toast.makeText(getApplicationContext(),"lanyashebeiFragment创建了",Toast.LENGTH_LONG).show();
-                    replaceRightFragment(new LanYaSheBeiFragment());
+                    replaceRightFragment(new SystemSettingFragment());
                     break;
                 case R.id.BtnSystemMessage:
                     Toast.makeText(getApplicationContext(),"SystemSettingFragment创建了",Toast.LENGTH_LONG).show();
-                    replaceRightFragment(new LanYaSheBeiFragment());
+                    replaceRightFragment(new SystemMessageFragment());
                     break;
                 case R.id.BtnEffectSetting:
                     Toast.makeText(getApplicationContext(),"EffectSettingFragment创建了",Toast.LENGTH_LONG).show();
-                    replaceRightFragment(new LanYaSheBeiFragment());
+                    replaceRightFragment(new EffectSettingFragment());
                     break;
                 case R.id.BtnLanguage:
                     Toast.makeText(getApplicationContext(),"LanguageFragment创建了",Toast.LENGTH_LONG).show();
-                    replaceRightFragment(new LanYaSheBeiFragment());
+                    replaceRightFragment(new LanguageFragment());
                     break;
 
             }
