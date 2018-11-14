@@ -15,46 +15,134 @@
       android:layout_marginTop="220px"
       android:background="@mipmap/zuodi"
       />
+  <android.support.v4.widget.NestedScrollView
+      android:layout_marginLeft="0px"
+      android:layout_marginTop="220px"
+      android:layout_width="195px"
+      android:layout_height="860px">
+  <RadioGroup
+      android:orientation="vertical"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content">
 
-
-  <!--拨打-->
-  <ImageButton
-      android:id="@+id/BtnDial"
+  <!--背光-->
+  <RadioButton
+      android:id="@+id/BtnBackLight"
       android:layout_width="195px"
       android:layout_height="213px"
       android:layout_marginLeft="0px"
-      android:layout_marginTop="221px"
-      android:background="@drawable/boda_bt"
+      android:button="@null"
+      android:clickable="true"
+      android:background="@drawable/backlight_setting"
       />
-  <!--通话记录-->
-  <ImageButton
-      android:id="@+id/BtnCallLog"
+  <!--工厂设置-->
+  <RadioButton
+      android:id="@+id/BtnFactorySetting"
       android:layout_width="195px"
       android:layout_height="213px"
       android:layout_marginLeft="0px"
-      android:layout_marginTop="436px"
-      android:background="@drawable/tonghuajilu_bt"
+      android:button="@null"
+      android:clickable="true"
+      android:background="@drawable/factorysetting_setting"
       />
-
-  <ImageButton
-      android:id="@+id/BtnTelBook"
+   <!--导航-->
+  <RadioButton
+      android:id="@+id/BtnNav"
       android:layout_width="195px"
       android:layout_height="213px"
       android:layout_marginLeft="0px"
-      android:layout_marginTop="651px"
-      android:background="@drawable/dianhuaben_bt"
+      android:button="@null"
+      android:clickable="true"
+      android:background="@drawable/navigation_setting"
       />
-
-
-  <ImageButton
-      android:id="@+id/BtnBluetoothtools"
+    <!--方向盘-->
+  <RadioButton
+      android:id="@+id/BtnSteeringWheel"
       android:layout_width="195px"
       android:layout_height="213px"
       android:layout_marginLeft="0px"
-      android:layout_marginTop="866px"
-      android:background="@drawable/lanyashebei_bt"
+      android:button="@null"
+      android:clickable="true"
+      android:background="@drawable/streewheel_setting"
       />
+    <!--更多-->
+    <RadioButton
+        android:id="@+id/BtnMore"
+        android:layout_width="195px"
+        android:layout_height="213px"
+        android:layout_marginLeft="0px"
+        android:button="@null"
+        android:clickable="true"
+        android:background="@drawable/more_setting"
+        />
 
+    <!--GPS-->
+    <RadioButton
+        android:id="@+id/BtnGPS"
+        android:layout_width="195px"
+        android:layout_height="213px"
+        android:layout_marginLeft="0px"
+        android:button="@null"
+        android:clickable="true"
+        android:background="@drawable/gps_setting"
+        />
+    <!--时间-->
+    <RadioButton
+        android:id="@+id/BtnTime"
+        android:layout_width="195px"
+        android:layout_height="213px"
+        android:layout_marginLeft="0px"
+        android:button="@null"
+        android:clickable="true"
+        android:background="@drawable/time_setting"
+        />
+
+    <!--系统设置-->
+    <RadioButton
+        android:id="@+id/BtnSystemSetting"
+        android:layout_width="195px"
+        android:layout_height="213px"
+        android:layout_marginLeft="0px"
+        android:button="@null"
+        android:clickable="true"
+        android:background="@drawable/systemsetting_setting"
+        />
+
+    <!--系统信息-->
+    <RadioButton
+        android:id="@+id/BtnSystemMessage"
+        android:layout_width="195px"
+        android:layout_height="213px"
+        android:layout_marginLeft="0px"
+        android:button="@null"
+        android:clickable="true"
+        android:background="@drawable/systemmessage_setting"
+        />
+
+    <!--音效设置-->
+    <RadioButton
+        android:id="@+id/BtnEffectSetting"
+        android:layout_width="195px"
+        android:layout_height="213px"
+        android:layout_marginLeft="0px"
+        android:button="@null"
+        android:clickable="true"
+        android:background="@drawable/effectsetting_setting"
+        />
+
+    <!--语言-->
+    <RadioButton
+        android:id="@+id/BtnLanguage"
+        android:layout_width="195px"
+        android:layout_height="213px"
+        android:layout_marginLeft="0px"
+        android:button="@null"
+        android:clickable="true"
+        android:background="@drawable/yuyan_setting"
+        />
+  </RadioGroup>
+
+  </android.support.v4.widget.NestedScrollView>
 
   <ImageView
       android:id="@+id/line_1"

@@ -239,6 +239,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
                 break;
             case R.id.btnBluetooth:
                 showLanya();
+                Log.d(TAG,"showLanYa()方法执行了");
                 break;
         }
 
@@ -251,7 +252,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
     private void showShezhi() {
         Intent  intent  = new Intent(MainActivity.this,SettingActivity.class);
         startActivity(intent);
-        finish();
+        //finish();
     }
 
     private void showDaohang() {

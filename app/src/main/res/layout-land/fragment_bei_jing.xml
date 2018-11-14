@@ -4,22 +4,22 @@
              android:layout_height="match_parent"
              tools:context="com.example.zxw_soft.desktop.BeiJingFragment">
 
-    <ImageButton
-        android:id="@+id/BtnLightReduce"
+    <ImageView
+        android:id="@+id/iv_liangdujian"
         android:layout_width="134px"
         android:layout_height="134px"
         android:layout_marginLeft="305px"
         android:layout_marginTop="384px"
-        android:background="@drawable/liangdujian_background"
+        android:background="@mipmap/lliangdujian_n"
         />
 
-    <ImageButton
-        android:id="@+id/BtnLightAdd"
+    <ImageView
+        android:id="@+id/iv_liangdujia"
         android:layout_width="134px"
         android:layout_height="134px"
         android:layout_marginLeft="1677px"
         android:layout_marginTop="384px"
-        android:background="@drawable/liangdujia_background"
+        android:background="@mipmap/liangdujia_n"
         />
 
     <ImageView
@@ -41,22 +41,22 @@
         android:background="@mipmap/huakuai"
         />
 
-    <ImageButton
-        android:id="@+id/BtnSoundAdd"
+    <ImageView
+        android:id="@+id/iv_yueliangjian"
         android:layout_width="134px"
         android:layout_height="134px"
         android:layout_marginLeft="305px"
         android:layout_marginTop="553px"
-        android:background="@drawable/yueliangjia_background"
+        android:background="@mipmap/yueliangjian_n"
         />
 
-    <ImageButton
-        android:id="@+id/BtnSoundEffect"
+    <ImageView
+        android:id="@+id/iv_yueliangjia"
         android:layout_width="134px"
         android:layout_height="134px"
         android:layout_marginLeft="1677px"
         android:layout_marginTop="553px"
-        android:background="@drawable/yueliangjian_background"
+        android:background="@mipmap/yueliangjia_n"
         />
 
     <ImageView
