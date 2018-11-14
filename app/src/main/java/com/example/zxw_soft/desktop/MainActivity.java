@@ -52,10 +52,8 @@ public class MainActivity extends Activity implements View.OnClickListener {
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);//去掉标题栏
         //setFullScreen(this);
-
         transparencyStatusBar(this);
-
-       setContentView(R.layout.activity_main);
+         setContentView(R.layout.activity_main);
         //setContentView(R.layout.bluetooth_setting);
         //setContentView(R.layout.bluetooth_dial);
         //兩個RadioGroup實現單選
@@ -241,9 +239,17 @@ public class MainActivity extends Activity implements View.OnClickListener {
                 showLanya();
                 Log.d(TAG,"showLanYa()方法执行了");
                 break;
+            case R.id.btnMusic:
+                showMusic();
         }
 
     }
+
+    private void showMusic() {
+        Intent  intent  = new Intent(MainActivity.this,MusicActivity.class);
+        startActivity(intent);
+    }
+
     private void showLanya() {
         Intent  intent  = new Intent(MainActivity.this,LanYaActivity.class);
         startActivity(intent);

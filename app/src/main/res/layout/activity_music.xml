@@ -1,15 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:orientation="vertical"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent">
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_music"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.zxw_soft.desktop.MusicActivity">
 
     <ImageView
         android:id="@+id/xiadi_rd"
         android:layout_marginLeft="0px"
         android:layout_marginTop="939px"
-        android:layout_width="match_parent"
-        android:layout_height="116px"
+        android:layout_width="1980px"
+        android:layout_height="141px"
         android:background="@mipmap/xiadi"
         />
 
@@ -186,8 +189,6 @@
         android:scaleType="fitXY"
         android:src="@drawable/banping_music"
         />
-
-
 
 
 </RelativeLayout>
