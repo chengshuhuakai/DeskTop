@@ -3,8 +3,8 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_music"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_width="1920px"
+    android:layout_height="1080px"
     tools:context="com.example.zxw_soft.desktop.MusicActivity">
 
     <ImageView
@@ -16,6 +16,11 @@
         android:background="@mipmap/xiadi"
         />
 
+    <ImageView
+        android:layout_marginTop="220px"
+        android:background="@mipmap/quanpingbackground_music"
+        android:layout_width="1980px"
+        android:layout_height="725px"/>
     <ImageView
         android:id="@+id/fengmian"
         android:layout_marginLeft="95px"
