@@ -1,25 +1,20 @@
 package com.example.zxw_soft.desktop;
 
-import android.content.ContentResolver;
 import android.database.Cursor;
 import android.graphics.Color;
-import android.media.AudioManager;
 import android.media.MediaPlayer;
-import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.app.Activity;
 import android.provider.MediaStore;
-import android.util.Log;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 
-import java.io.IOException;
-import java.net.URL;
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Iterator;
 import java.util.Map;
-import java.util.Objects;
 
 public class MusicActivity extends Activity {
 
@@ -33,7 +28,7 @@ public class MusicActivity extends Activity {
     private MediaPlayer mMediaPlayer;
     private String url;
     private ArrayList<MusicBean> musicList;
-    private ArrayList<Map<String, Objects>> listems;
+    private ArrayList<Map<String, Object>> listems;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,9 +46,27 @@ public class MusicActivity extends Activity {
         //调用扫描方法
         musicList = scanAllAudioFiles();
         //这里其实可以直接在扫描时返回 ArrayList<Map<String, Object>>()
-        listems =new ArrayList<Map<String,Objects>>();
+        listems =new ArrayList<>();
         /*解析数据，放置到ListView*/
 
+        for (Iterator iterator = musicList.iterator();iterator.hasNext();) {
+            // 创建键值对集合，将 获取的数据生成键值对，重新组合，其实可以放在scanAllAudioFiles()里面
+            Map<String, Object> map = new HashMap<String, Object>();
+            MusicBean mp3Info = (MusicBean) iterator.next();
+//          map.put("id",mp3Info.getId());
+            map.put("title", mp3Info.getTitle());
+            map.put("artist", mp3Info.getArtist());
+            map.put("album", mp3Info.getAlbum());
+//          map.put("albumid", mp3Info.getAlbumId());
+            map.put("duration", mp3Info.getTime());
+            map.put("size", mp3Info.getSize());
+            map.put("url", mp3Info.getUrl());
+            //map.put("bitmap", R.drawable.musicfile);
+
+            listems.add(map);
+
+
+        }
 
 
            /*SimpleAdapter的参数说明
