@@ -1,20 +1,38 @@
 package com.example.zxw_soft.desktop;
 
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.database.Cursor;
 import android.graphics.Color;
 import android.media.MediaPlayer;
 import android.os.Build;
 import android.os.Bundle;
 import android.app.Activity;
+import android.os.Handler;
+import android.preference.PreferenceManager;
 import android.provider.MediaStore;
+import android.util.Log;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.Button;
+import android.widget.CheckBox;
+import android.widget.CompoundButton;
+import android.widget.ImageButton;
+import android.widget.ImageView;
+import android.widget.ListView;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
+import android.widget.SimpleAdapter;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
+
+import static android.content.ContentValues.TAG;
 
 public class MusicActivity extends Activity {
 
@@ -24,11 +42,22 @@ public class MusicActivity extends Activity {
     public  static final int PLAT_MUSIC=1;
     public  static final int PAUSE_MUSIC=2;
     public  static final int STOP_MUSIC=3;
-
+    public static SharedPreferences.Editor editor;//保存播放模式
     private MediaPlayer mMediaPlayer;
     private String url;
     private ArrayList<MusicBean> musicList;
     private ArrayList<Map<String, Object>> listems;
+    private Intent intent;
+    private SharedPreferences sharedPreferences;
+    private ImageView playMode ,playaccelerometer;
+    private CheckBox mChkPlayPause;
+    private ImageButton mBtnNext;
+    private ImageButton mBtnPrev;
+    private ImageButton mBtnLoopMode;
+    private ImageButton mBtnFileList;
+    private ImageButton mBtnSoundEffect;
+    private ImageButton mBtnHalfSize;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,12 +66,73 @@ public class MusicActivity extends Activity {
         //setFullScreen(this);
         transparencyStatusBar(this);
         setContentView(R.layout.activity_music);
-        initView();
+        initView(MusicActivity.this);
         //初始化數據
+        initData();
+        //初始化
         init();
     }
 
     private void init() {
+       intent =  new Intent();
+       intent.setAction("player");
+       intent.setPackage(getPackageName());
+
+        //默认随机播放,播放模式
+        playMode = findViewById(R.id.BtnLoopMode);
+        sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
+        editor = sharedPreferences.edit();
+        int playmode = sharedPreferences.getInt("play_mode", -1);
+        if(playmode == -1){//没有设置模式，默认随机
+            editor.putInt("play_mode",0).commit();
+        }else{
+            changeMode(playmode);
+        }
+        //分享按钮
+/*        handler = new Handler();
+        imageView = (ImageView)findViewById(R.id.click_share);
+        imageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent shareIntent = new Intent();
+                shareIntent.setAction(Intent.ACTION_SEND);
+                shareIntent.putExtra(Intent.EXTRA_TEXT,"我的博客地址：http://blog.csdn.net/i_do_can");
+                shareIntent.setType("text/plain");
+                //设置分享列表
+                startActivity(Intent.createChooser(shareIntent,"分享到"));
+            }
+        });*/
+
+       /* textView  = (TextView)findViewById(R.id.musicinfo);
+        musicListView = (ListView)findViewById(R.id.musicListView);
+*/
+
+    }
+
+
+
+    //修改播放模式  单曲循环 随机播放 顺序播放
+    int clicktimes = 0;
+    private void changeMode(int playmode) {
+        switch (clicktimes){
+            case 0://随机 --> 顺序
+                clicktimes++;
+                changeMode(clicktimes);
+                break;
+            case 1://顺序 --> 单曲
+                clicktimes++;
+                changeMode(clicktimes);
+                break;
+            case 2://单曲 --> 随机
+                clicktimes = 0;
+                changeMode(clicktimes);
+                break;
+            default:
+                break;
+        }
+    }
+
+    private void initData() {
         //调用扫描方法
         musicList = scanAllAudioFiles();
         //这里其实可以直接在扫描时返回 ArrayList<Map<String, Object>>()
@@ -62,10 +152,7 @@ public class MusicActivity extends Activity {
             map.put("size", mp3Info.getSize());
             map.put("url", mp3Info.getUrl());
             //map.put("bitmap", R.drawable.musicfile);
-
             listems.add(map);
-
-
         }
 
 
@@ -79,10 +166,104 @@ public class MusicActivity extends Activity {
          * 下面的程序中如果 new String[] { "name", "head", "desc","name" } new int[] {R.id.name,R.id.head,R.id.desc,R.id.head}
          * 这个head的组件会被name资源覆盖
          * */
+        SimpleAdapter mSimpleAdapter =new SimpleAdapter(this,listems,R.layout.menu_item,new String[] {"bitmap","title","artist", "size","duration"},
+                new int[] {R.id.video_imageView,R.id.video_title,R.id.video_singer,R.id.video_size,R.id.video_duration}
+        );
+        //listView 里加载数据
+        //musicListView.setAdapter(mSimpleAdapter);
     }
-    private void initView() {
+    private void initView(MusicActivity view) {
         //TODO 设置监听事件
+        mChkPlayPause = findViewById(R.id.ChkPlayPause);
+        mBtnNext = findViewById(R.id.BtnNext);
+        mBtnPrev= findViewById(R.id.BtnPrev);
+        mBtnLoopMode = findViewById(R.id.BtnLoopMode);
+        mBtnFileList = findViewById(R.id.BtnFileList);
+        mBtnSoundEffect = findViewById(R.id.BtnSoundEffect);
+        mBtnHalfSize = findViewById(R.id.BtnHalfSize);
+
+        // 播放
+        mChkPlayPause.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if(isChecked ==true){
+                    Toast.makeText(MusicActivity.this,"开始播放",Toast.LENGTH_SHORT).show();
+                    // 绑定服务，并开启
+                }
+            }
+        });
+        int[] imageButtons  ={R.id.BtnNext,R.id.BtnPrev,R.id.BtnLoopMode,R.id.BtnFileList,R.id.BtnSoundEffect,R.id.BtnHalfSize};
+        ImageButton[] buttonsName= new ImageButton[]{mBtnNext,mBtnPrev,mBtnLoopMode,mBtnFileList,mBtnSoundEffect,mBtnHalfSize};
+        View btn = null;
+        for (int i = 0; i <imageButtons.length ; i++) {
+            buttonsName[i] = findViewById(imageButtons[i]);
+            buttonsName[i].setOnClickListener(new ButtonListener());
+        }
+
     }
+
+    class ButtonListener implements View.OnClickListener {
+
+        @Override
+        public void onClick(View v) {
+            switch (v.getId()) {
+                case R.id.BtnNext:
+                    showNext();
+                    Log.d(TAG, "showNext()方法执行了");
+                    break;
+                case R.id.BtnPrev:
+                    showPrev();
+                    Log.d(TAG, "showPrev()方法执行了");
+                    break;
+                case R.id.BtnLoopMode:
+                    showLoopMode();
+                    Log.d(TAG, "showLoopMode()方法执行了");
+                    break;
+                case R.id.BtnFileList:
+                    showFileList();
+                    Log.d(TAG, "showFileList()方法执行了");
+                    break;
+                case R.id.BtnSoundEffect:
+                    showSoundEffect();
+                    Log.d(TAG, "showSoundEffect()方法执行了");
+                    break;
+                case R.id.BtnHalfSize:
+                    showHalfSize();
+                    Log.d(TAG, "showHalfSize()方法执行了");
+                    break;
+            }
+        }
+    }
+
+    private void showSoundEffect() {
+
+    }
+
+    private void showHalfSize() {
+
+    }
+
+    private void showFileList() {
+        Intent intent  =new Intent(this,MusicListActivity.class) ;
+
+        startActivity(intent);
+
+
+
+    }
+
+    private void showLoopMode() {
+
+    }
+
+    private void showPrev() {
+
+    }
+
+    // 下一曲
+    private void showNext() {
+    }
+    //
 
     private static void transparencyStatusBar(Activity activity) {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {

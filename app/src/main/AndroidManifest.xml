@@ -27,8 +27,16 @@
         <activity
             android:name=".MusicActivity"
             android:label="@string/title_activity_music">
-            <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+            <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
         </activity>
+        <activity android:name=".MusicListActivity">
+        </activity>
+
+        <service
+            android:name=".MusicService"
+            android:enabled="true"
+            android:exported="true">
+        </service>
     </application>
 
 </manifest>
