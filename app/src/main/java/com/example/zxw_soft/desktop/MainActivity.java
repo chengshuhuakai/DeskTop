@@ -245,6 +245,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
                 break;
             case R.id.btnMusic:
                 showMusic();
+                Log.d(TAG,"showMusic()方法执行了");
         }
 
     }

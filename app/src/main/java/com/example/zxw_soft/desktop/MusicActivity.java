@@ -1,5 +1,6 @@
 package com.example.zxw_soft.desktop;
 
+import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.database.Cursor;
@@ -57,6 +58,7 @@ public class MusicActivity extends Activity {
     private ImageButton mBtnFileList;
     private ImageButton mBtnSoundEffect;
     private ImageButton mBtnHalfSize;
+    private static int currentposition = -1;//当前播放列表里哪首音乐
 
 
     @Override
@@ -79,14 +81,14 @@ public class MusicActivity extends Activity {
        intent.setPackage(getPackageName());
 
         //默认随机播放,播放模式
-        playMode = findViewById(R.id.BtnLoopMode);
+        playMode = (ImageView) findViewById(R.id.BtnLoopMode);
         sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
         editor = sharedPreferences.edit();
         int playmode = sharedPreferences.getInt("play_mode", -1);
         if(playmode == -1){//没有设置模式，默认随机
             editor.putInt("play_mode",0).commit();
         }else{
-            changeMode(playmode);
+            //changeMode(playmode);
         }
         //分享按钮
 /*        handler = new Handler();
@@ -106,6 +108,7 @@ public class MusicActivity extends Activity {
        /* textView  = (TextView)findViewById(R.id.musicinfo);
         musicListView = (ListView)findViewById(R.id.musicListView);
 */
+        //开启服务
 
     }
 
@@ -174,13 +177,13 @@ public class MusicActivity extends Activity {
     }
     private void initView(MusicActivity view) {
         //TODO 设置监听事件
-        mChkPlayPause = findViewById(R.id.ChkPlayPause);
-        mBtnNext = findViewById(R.id.BtnNext);
-        mBtnPrev= findViewById(R.id.BtnPrev);
-        mBtnLoopMode = findViewById(R.id.BtnLoopMode);
-        mBtnFileList = findViewById(R.id.BtnFileList);
-        mBtnSoundEffect = findViewById(R.id.BtnSoundEffect);
-        mBtnHalfSize = findViewById(R.id.BtnHalfSize);
+        mChkPlayPause = (CheckBox) findViewById(R.id.ChkPlayPause);
+        mBtnNext = (ImageButton) findViewById(R.id.BtnNext);
+        mBtnPrev= (ImageButton) findViewById(R.id.BtnPrev);
+        mBtnLoopMode = (ImageButton) findViewById(R.id.BtnLoopMode);
+        mBtnFileList = (ImageButton) findViewById(R.id.BtnFileList);
+        mBtnSoundEffect = (ImageButton) findViewById(R.id.BtnSoundEffect);
+        mBtnHalfSize = (ImageButton) findViewById(R.id.BtnHalfSize);
 
         // 播放
         mChkPlayPause.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
@@ -189,6 +192,10 @@ public class MusicActivity extends Activity {
                 if(isChecked ==true){
                     Toast.makeText(MusicActivity.this,"开始播放",Toast.LENGTH_SHORT).show();
                     // 绑定服务，并开启
+                    //点击播放音乐，不过需要判断一下当前是否有音乐在播放，需要关闭正在播放的
+                    //position 可以获取到点击的是哪一个，去 musicList 里寻找播放
+                    // currentposition = position;
+                    Player(currentposition);
                 }
             }
         });
@@ -196,10 +203,23 @@ public class MusicActivity extends Activity {
         ImageButton[] buttonsName= new ImageButton[]{mBtnNext,mBtnPrev,mBtnLoopMode,mBtnFileList,mBtnSoundEffect,mBtnHalfSize};
         View btn = null;
         for (int i = 0; i <imageButtons.length ; i++) {
-            buttonsName[i] = findViewById(imageButtons[i]);
+            buttonsName[i] = (ImageButton) findViewById(imageButtons[i]);
             buttonsName[i].setOnClickListener(new ButtonListener());
         }
 
+    }
+
+
+    private void Player(int position) {
+        intent.putExtra("curposition", position);//把位置传回去，方便再启动时调用
+        intent.putExtra("url", musicList.get(position).getUrl());
+        intent.putExtra("MSG","0");
+        //播放时就改变btn_play_pause图标，下面这个过期了
+//        btn_play_pause.setBackgroundDrawable(getResources().getDrawable(R.drawable.pause));
+        mChkPlayPause.setBackgroundResource(R.mipmap.pause);
+        startService(intent);
+        //bindService(intent, conn, Context.BIND_AUTO_CREATE);
+        Log.i("MusicPlayerService","MusicActivity...bindService.......");
     }
 
     class ButtonListener implements View.OnClickListener {

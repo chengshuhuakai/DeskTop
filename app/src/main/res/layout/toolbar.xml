@@ -18,7 +18,7 @@
         android:onClick="clickShare"
         android:layout_width="20dp"
         android:layout_height="wrap_content"
-        android:src="@drawable/share"
+        android:src="@mipmap/share"
         android:layout_alignParentTop="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
