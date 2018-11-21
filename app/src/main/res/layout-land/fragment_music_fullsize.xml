@@ -108,15 +108,15 @@
         />
 
     <!--暫停-->
-    <CheckBox
-        android:id="@+id/ChkPlayPause"
+    <ImageButton
+        android:id="@+id/BtnPlayPause"
         android:layout_marginLeft="26px"
         android:layout_marginTop="930px"
         android:layout_width="146px"
         android:layout_height="146px"
-        android:checked="true"
-        android:button="@null"
-        android:background="@drawable/zanting_music"
+        android:background="@null"
+        android:scaleType="fitXY"
+        android:src="@drawable/zanting_music"
         />
 
     <ImageButton

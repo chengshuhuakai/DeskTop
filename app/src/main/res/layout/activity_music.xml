@@ -116,8 +116,8 @@
         />
 
     <!--暫停-->
-    <CheckBox
-        android:id="@+id/ChkPlayPause"
+    <ImageButton
+        android:id="@+id/BtnPlayPause"
         android:layout_marginLeft="26px"
         android:layout_marginTop="930px"
         android:layout_width="146px"
@@ -194,6 +194,4 @@
         android:scaleType="fitXY"
         android:src="@drawable/banping_music"
         />
-
-
 </RelativeLayout>

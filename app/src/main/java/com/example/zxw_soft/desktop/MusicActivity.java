@@ -1,7 +1,9 @@
 package com.example.zxw_soft.desktop;
 
+import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
+import android.content.ServiceConnection;
 import android.content.SharedPreferences;
 import android.database.Cursor;
 import android.graphics.Color;
@@ -10,6 +12,7 @@ import android.os.Build;
 import android.os.Bundle;
 import android.app.Activity;
 import android.os.Handler;
+import android.os.IBinder;
 import android.preference.PreferenceManager;
 import android.provider.MediaStore;
 import android.util.Log;
@@ -34,6 +37,7 @@ import java.util.Iterator;
 import java.util.Map;
 
 import static android.content.ContentValues.TAG;
+import static com.example.zxw_soft.desktop.MusicService.mediaPlayer;
 
 public class MusicActivity extends Activity {
 
@@ -45,13 +49,15 @@ public class MusicActivity extends Activity {
     public  static final int STOP_MUSIC=3;
     public static SharedPreferences.Editor editor;//保存播放模式
     private MediaPlayer mMediaPlayer;
+    private static MusicService musicPlayerService = null;
     private String url;
     private ArrayList<MusicBean> musicList;
     private ArrayList<Map<String, Object>> listems;
     private Intent intent;
     private SharedPreferences sharedPreferences;
     private ImageView playMode ,playaccelerometer;
-    private CheckBox mChkPlayPause;
+
+    private ImageButton mBtnPlayPause;
     private ImageButton mBtnNext;
     private ImageButton mBtnPrev;
     private ImageButton mBtnLoopMode;
@@ -109,8 +115,37 @@ public class MusicActivity extends Activity {
         musicListView = (ListView)findViewById(R.id.musicListView);
 */
         //开启服务
-
+        startService(intent);
+        // ServiceConnection conn
+        bindService(intent, conn, Context.BIND_AUTO_CREATE);
+        Log.i("MusicPlayerService","MusicActivity...bindService.......");
     }
+
+    // ServiceConnection conn ,用于传入bon
+    private ServiceConnection conn  =new ServiceConnection() {
+        @Override
+        public void onServiceConnected(ComponentName name, IBinder service) {
+
+            musicPlayerService = ((MusicService.musicBinder)service).getPlayInfo();
+            //拿到MediaPlayer， 并进行播放
+            mediaPlayer = musicPlayerService.getMediaPlayer();
+            Log.i("MusicPlayerService", "MusicActivity...onServiceConnected.......");
+            //拿到歌曲的位置
+            currentposition = musicPlayerService.getCurposition();
+            //设置进度条最大值
+            //audioSeekBar.setMax(mediaPlayer.getDuration());
+            //这里开了一个线程处理进度条,这个方式官方貌似不推荐，说违背什么单线程什么鬼
+            //new Thread(seekBarThread).start();
+            //使用runnable + handler
+            //handler.post(seekBarHandler);
+
+        }
+
+        @Override
+        public void onServiceDisconnected(ComponentName name) {
+
+        }
+    };
 
 
 
@@ -176,17 +211,17 @@ public class MusicActivity extends Activity {
         //musicListView.setAdapter(mSimpleAdapter);
     }
     private void initView(MusicActivity view) {
-        //TODO 设置监听事件
-        mChkPlayPause = (CheckBox) findViewById(R.id.ChkPlayPause);
+     /*   //TODO 设置监听事件
+        mBtnPlayPause = (ImageButton) findViewById(R.id.BtnPlayPause);
         mBtnNext = (ImageButton) findViewById(R.id.BtnNext);
         mBtnPrev= (ImageButton) findViewById(R.id.BtnPrev);
         mBtnLoopMode = (ImageButton) findViewById(R.id.BtnLoopMode);
         mBtnFileList = (ImageButton) findViewById(R.id.BtnFileList);
         mBtnSoundEffect = (ImageButton) findViewById(R.id.BtnSoundEffect);
-        mBtnHalfSize = (ImageButton) findViewById(R.id.BtnHalfSize);
+        mBtnHalfSize = (ImageButton) findViewById(R.id.BtnHalfSize);*/
 
         // 播放
-        mChkPlayPause.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+      /*  mBtnPlayPause.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if(isChecked ==true){
@@ -198,9 +233,9 @@ public class MusicActivity extends Activity {
                     Player(currentposition);
                 }
             }
-        });
-        int[] imageButtons  ={R.id.BtnNext,R.id.BtnPrev,R.id.BtnLoopMode,R.id.BtnFileList,R.id.BtnSoundEffect,R.id.BtnHalfSize};
-        ImageButton[] buttonsName= new ImageButton[]{mBtnNext,mBtnPrev,mBtnLoopMode,mBtnFileList,mBtnSoundEffect,mBtnHalfSize};
+        });*/
+        int[] imageButtons=new int[]{R.id.BtnPlayPause,R.id.BtnNext,R.id.BtnPrev,R.id.BtnLoopMode,R.id.BtnFileList,R.id.BtnSoundEffect,R.id.BtnHalfSize};
+        ImageButton[] buttonsName= new ImageButton[]{mBtnPlayPause,mBtnNext,mBtnPrev,mBtnLoopMode,mBtnFileList,mBtnSoundEffect,mBtnHalfSize};
         View btn = null;
         for (int i = 0; i <imageButtons.length ; i++) {
             buttonsName[i] = (ImageButton) findViewById(imageButtons[i]);
@@ -216,7 +251,7 @@ public class MusicActivity extends Activity {
         intent.putExtra("MSG","0");
         //播放时就改变btn_play_pause图标，下面这个过期了
 //        btn_play_pause.setBackgroundDrawable(getResources().getDrawable(R.drawable.pause));
-        mChkPlayPause.setBackgroundResource(R.mipmap.pause);
+        //mBtnPlayPause.setBackgroundResource(R.mipmap.pause);
         startService(intent);
         //bindService(intent, conn, Context.BIND_AUTO_CREATE);
         Log.i("MusicPlayerService","MusicActivity...bindService.......");
@@ -227,6 +262,10 @@ public class MusicActivity extends Activity {
         @Override
         public void onClick(View v) {
             switch (v.getId()) {
+                case R.id.BtnPlayPause:
+                    showPlayPause();
+                    Log.d(TAG, "showPlayPause()方法执行了");
+                    break;
                 case R.id.BtnNext:
                     showNext();
                     Log.d(TAG, "showNext()方法执行了");
@@ -255,12 +294,13 @@ public class MusicActivity extends Activity {
         }
     }
 
-    private void showSoundEffect() {
+    private void showPlayPause() {
+    }
 
+    private void showSoundEffect() {
     }
 
     private void showHalfSize() {
-
     }
 
     private void showFileList() {

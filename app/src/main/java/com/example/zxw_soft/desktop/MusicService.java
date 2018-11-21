@@ -28,6 +28,11 @@ public class MusicService extends Service implements Runnable{
 
     }
 
+    //返回当前歌曲进度
+    public int getCurposition() {
+        return currentPosition ;
+    }
+
     /**
      * 自定义的 Binder对象
      */
@@ -150,6 +155,14 @@ public class MusicService extends Service implements Runnable{
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+
+
+    public  MediaPlayer getMediaPlayer(){
+        //        if(mediaPlayer != null){
+//            return mediaPlayer;
+//        }
+        return mediaPlayer;
     }
 
 }
