@@ -15,6 +15,7 @@ import android.os.Handler;
 import android.os.IBinder;
 import android.preference.PreferenceManager;
 import android.provider.MediaStore;
+import android.text.LoginFilter;
 import android.util.Log;
 import android.view.View;
 import android.view.Window;
@@ -44,6 +45,7 @@ public class MusicActivity extends Activity {
     /**
      * 规定开始音乐、暂停音乐、结束音乐的标志
      */
+    private static final String TAG = "MusicPlayerActivity";
     public  static final int PLAT_MUSIC=1;
     public  static final int PAUSE_MUSIC=2;
     public  static final int STOP_MUSIC=3;
@@ -82,6 +84,7 @@ public class MusicActivity extends Activity {
     }
 
     private void init() {
+        Log.i(TAG, "init: init()方法执行 ");
        intent =  new Intent();
        intent.setAction("player");
        intent.setPackage(getPackageName());
@@ -171,6 +174,7 @@ public class MusicActivity extends Activity {
     }
 
     private void initData() {
+        Log.i(TAG, "initData: 开始调用扫描方法");
         //调用扫描方法
         musicList = scanAllAudioFiles();
         //这里其实可以直接在扫描时返回 ArrayList<Map<String, Object>>()
@@ -190,6 +194,12 @@ public class MusicActivity extends Activity {
             map.put("size", mp3Info.getSize());
             map.put("url", mp3Info.getUrl());
             //map.put("bitmap", R.drawable.musicfile);
+            Log.i(TAG, "initData:title" + mp3Info.getTitle());
+            Log.i(TAG, "initData:artist" + mp3Info.getArtist());
+            Log.i(TAG, "initData:album" + mp3Info.getAlbum());
+            Log.i(TAG, "initData: duration" + mp3Info.getTime());
+            Log.i(TAG, "initData: size" + mp3Info.getSize());
+            Log.i(TAG, "initData: url" + mp3Info.getUrl());
             listems.add(map);
         }
 
@@ -211,6 +221,7 @@ public class MusicActivity extends Activity {
         //musicListView.setAdapter(mSimpleAdapter);
     }
     private void initView(MusicActivity view) {
+        Log.i(TAG, "initView: initView()方法開始了");
      /*   //TODO 设置监听事件
         mBtnPlayPause = (ImageButton) findViewById(R.id.BtnPlayPause);
         mBtnNext = (ImageButton) findViewById(R.id.BtnNext);
@@ -254,7 +265,7 @@ public class MusicActivity extends Activity {
         //mBtnPlayPause.setBackgroundResource(R.mipmap.pause);
         startService(intent);
         //bindService(intent, conn, Context.BIND_AUTO_CREATE);
-        Log.i("MusicPlayerService","MusicActivity...bindService.......");
+        Log.i("MusicPlayeActivity","MusicActivity...bindService.......");
     }
 
     class ButtonListener implements View.OnClickListener {
@@ -343,13 +354,17 @@ public class MusicActivity extends Activity {
 
     /*查询媒体库音频*/
     private ArrayList<MusicBean> scanAllAudioFiles(){
+        Log.i(TAG, "scanAllAudioFiles: 掃描音頻文件方法開始執行...");
+        Log.i(TAG, "scanAllAudioFiles: 生成動態數組，並開始轉載數據（1）...");
         //1.生成动态数组，并转载数据。
         ArrayList<MusicBean>  myList=new ArrayList<MusicBean>();
+
         /*查询媒体数据库
           参数分别为（路径,要查询的列名,条件语句,条件参数,排序）
           视频：MediaStore.Video.Media.EXTERNAL_CONTENT_URI
           图片;MediaStore.Images.Media.EXTERNAL_CONTENT_URI
         */
+        Log.i(TAG, "scanAllAudioFiles: 開始查詢媒體數據庫（2）...");
         Cursor cursor  = getContentResolver().query(MediaStore.Audio.Media.EXTERNAL_CONTENT_URI,null,null,null, MediaStore.Audio.Media.DEFAULT_SORT_ORDER);
         //遍历媒体数据库
         if(!cursor.moveToNext()){
@@ -369,7 +384,12 @@ public class MusicActivity extends Activity {
                 int duration = cursor.getInt(cursor.getColumnIndexOrThrow(MediaStore.Audio.Media.DURATION));
                 //歌曲文件的大小 ：MediaStore.Audio.Media.SIZE
                 Long size = cursor.getLong(cursor.getColumnIndexOrThrow(MediaStore.Audio.Media.SIZE));
-
+                Log.i(TAG, "id:"+ id);
+                Log.i(TAG, "tilte:" + tilte);
+                Log.i(TAG, "album:" + album);
+                Log.i(TAG, "artist:" + artist);
+                Log.i(TAG, "url:" + url);
+                Log.i(TAG, "duration: " + duration);
                 if (size >1024*800){//大于800K
                     MusicBean musicMedia = new MusicBean();
                     musicMedia.setId(id);
@@ -385,6 +405,7 @@ public class MusicActivity extends Activity {
                 cursor.moveToNext();
             }
         }
+        Log.i(TAG, "scanAllAudioFiles: 數據查詢完成，返回數組（3）...");
         return myList;
     }
 
